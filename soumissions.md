@@ -1,12 +1,12 @@
 # Soumissions
 
 
-## demande FCI
+## Demande FCI
 
-montant: en espèces 23 071$ + en nature 5 394$ 
-total: 28 464$*
+Montant: en espèces 23 071$ + en nature 5 394$ 
+Total: 28 464$*
 
-inclut: 
+Inclut: 
 - Analyse des besoins 4 248 $
 - Déploiement du CMS et création des rôles utilisateurs 2 124 $
 - Conception des modèles d’interface 5 098 $
