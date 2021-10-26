@@ -3,7 +3,9 @@
 
 ## demande FCI
 
-montant = *en espèces 23 071$ + en nature 5 394$ ; total 28 464$*
+montant: en espèces 23 071$ + en nature 5 394$ 
+total: 28 464$*
+
 inclut: 
 - Analyse des besoins 4 248 $
 - Déploiement du CMS et création des rôles utilisateurs 2 124 $
