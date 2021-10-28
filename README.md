@@ -4,5 +4,4 @@ La BDD est destinée à rassembler, décrire avec des métadonnées appropriées
 
 La base de données sera produite par un prestataire externe spécialisé dans les applications bibliothéconomiques en utilisant le gestionnaire de contenus libre et open source [Omeka-S](https://omeka.org/s/) qui offre les fonctionnalités nécessaires pour la description des ressources culturelles avec des métadonnées métiers (Dublin Core qualifié, BIBO, LIDO, BIO-CRM) et permet l’utilisation de vocabulaires structurés au format SKOS. Omeka-S permet d’alimenter un entrepôt OAI-PMH à destination des moteurs de recherche spécialisés en sciences humaines ainsi qu’une interface programmable (API REST) pour connecter les ressources avec l’Encyclopédie.
 
-## Feuille de route
-https://github.com/ouvroir/common/milestones
+## [Feuille de route](https://github.com/ouvroir/common/milestones?direction=asc&sort=due_date&state=open)
