@@ -40,7 +40,7 @@ since: 2021-11-30
 - last commit: 6 years ago. **No longer maintained**: recommends projects like [Prismic.io](https://prismic.io/) and [Contentful](https://www.contentful.com/) that tackle similar problems
   - prismic est quand même [cher](https://prismic.io/pricing). Licence: Apache 2
   - Contentful  Licence: MIT
-- Licence MIT, mais se bse sur les services google
+- Licence MIT, mais se base sur les services google
 
 ### Google Drive for Developers
 
