@@ -6,6 +6,33 @@ since: 2021-11-30
 
 # Journal
 
+## Questions
+
+- pertinence / besoin utilisation hors-ligne
+
+  
+
+## Recherche sur les solutions actuelles - 10 janvier 2022
+
+### Islandora
+
+[web](https://islandora.ca/), [sandbox demo](https://islandora.ca/try), [git repo](https://github.com/Islandora/islandora), [documentation](https://islandora.github.io/documentation/)
+
+- **Islandora**  is an open-source software framework  designed to help institutions and organizations and their audiences  collaboratively manage, and discover digital assets using a  best-practices framework
+- Drupal CMS as interface. Build in website front-end. Feodra as storage layer
+- Islandora 7: Drupal as presentation layer, Islandora makes drupal manage the fedora contents. Options to add custom "toppings"
+- Islandora 8: more modular application. All components can be removed and repalces easily. Customisation through the UI
+- Exploration du sandbox: interface très complexe, il faudrait l'explorer avec un use case plus clair pour comprendre ses forces et ses limites. Notes une liste de fonctionnalités à tester? 
+
+
+
+#### Specs
+
+- code en php
+- 1st release: avril 2017, latest release: 28 oct 2021
+- beaucoup de modules et dépendances mais toutes garanties libres et open source: **Islandora and all of its components are free to use and always will be.**
+- installation avec Docker ou Ansible
+
 ## Recherche sur les solutions actuelles - 7 décembre
 
 ### Library (NYTimes)
@@ -96,7 +123,7 @@ since: 2021-11-30
 - Le site web de https://hsscommons.ca est exploité par une communauté de chercheurs et hébergé par l’Université de Victoria
 - https://hsscommons.ca is available to researchers and scholars at  CAF-member institutions. It is intended for researchers studying in the  Humanities or Social Sciences that are in current, good standing at  their home institution. Upon leaving your university, your access to the Site may be revoked. If you would like assistance transitioning your  content to another community, please contact us via [hsscommons@uvic.ca](mailto:hsscommons@uvic.ca).
 
-<!-- websire restructuring in progress, completion planned by Dec. 10-->
+<!-- website restructuring in progress, completion planned by Dec. 10. Don't see any chances on jan 10 2022-->
 
 #### Specs
 
@@ -104,6 +131,10 @@ since: 2021-11-30
 - ORCID integration
 
 <!--Erudit est nommé comme partenaire, on peut leur demander s'ils s'en servent?-->
+
+
+
+
 
 ## Discussion du 30 novembre 2021
 
