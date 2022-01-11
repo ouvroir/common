@@ -6,11 +6,24 @@ since: 2021-11-30
 
 # Journal
 
-## Questions
+## Svelte
 
-- pertinence / besoin utilisation hors-ligne
+Svelte - client, communique avec une base de données avec un point d'accès REST.
 
-  
+Serveur (baseX , express NodeJs): 
+
+- quand tu reçois ce type de requête, tu fais x 
+- quand tu reçois ce type de requête, tu fais y (image --> serveur de stockage d'image type cantaloupe)
+
+Possibilité d'avoir une interface unifiée avec BaseX qui gère les fiches (modèle documentaire: Xquery pour manipuler les langages structurés)
+
+Stocker les fichiers dans des bases de données spécifiques (webDav)
+
+hors ligne: encapsuler Svelte dans un composant electron pour avoir une app locale mais il faudrait développer un module pour la synchronisation avec le serveur (Native Svelte)
+
+option mobile: charger les photos directement depuis le téléphone? 
+
+
 
 ## Recherche sur les solutions actuelles - 10 janvier 2022
 
