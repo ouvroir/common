@@ -47,7 +47,95 @@ Validation de l’application et correction des bugs (2 jours)
 - idéalement on devrait pouvoir forcer l’utilisateur à renseigner certains champs
 - les impératifs de signalement des ressources peuvent être discutés et sont subordonnés aux aspects fonctionnels
 
-## Exemples
+# Énoncé des fonctionnalités
 
-- https://open.nytimes.com/we-built-a-collaborative-documentation-site-deploy-your-own-with-the-push-of-a-button-134de99c42fc
+## Gestion collaborative des contenus
+
+### Espaces de travail
+
+Plusieurs espaces de travail différentiés.
+
+### Gestion des droits d’utilisateurs
+
+Gestion des droits différentiée.
+Tous les utilisateurs n’ont pas accès à tous les documents, certains accès sont réservés.
+
+Les droits sont les suivants :
+- visibilité ?
+- lecture
+- lecture et écriture
+
+### Partage des ressources
+
+Gestion du partage et de la publication des documents
+
+### Travail hors ligne
+
+L’accès réseau n’est pas toujours disponible dans les archives pour la collecte de données. L’application permet de travailler hors ligne et des mécanismes de mise à jour assynchrones sont implémentés pour synchroniser les modifications.
+
+Priorité : moyenne
+
+### Interfaces de travail
+
+Saisie de champs obligatoires
+Importation en lot
+Modification en masse
+Accessibilité (handicap)
+
+## Moteur de recherche
+
+Souhaite-t-on indexer automatiquement les documents PDF ?
+Appliquer de la reconnaissance automatique de caractère.
+
+Priorité : basse
+
+## Gestion des fichiers et des métadonnées
+
+### Types de fichiers supportés
+
+- pdf
+- jpg ? autres formats d’image
+- traitements de textes, tableurs ?
+
+### Gestion de structures arborescentes
+
+Les fonds archivistiques de même que les instruments de recherche présentent habitullement des structures arborescentes (dossier, sous-dossiers, et document).
+
+Priorité : basse
+
+### Standards de métadonnées supportés
+
+- Dublin Core qualifié
+
+Formats archivistiques
+- EAD
+- EAC-CFP ?
+- RAAD???
+
+Comment décrire les images et les pdf, est-ce que Dublin Core suffit ?
+- Images ?
+- PDF 
+
+## Signalement et exposition des données
+
+### Signalement des ressource avec OAI-PMH
+
+### Exposition des ressources en LOD
+
+### Exposition des métadonnées avec Zotero
+
+Synchronisation avec l'API de Zotero (références bibliographiques, expositions)
+
+### Dépôt pérenne
+
+Priorité : basse
+
+## Aspects techniques
+
+- WebDAV
+- Serveur IIIF
+- Base de données orientées document / SQL
+
+
+
 
