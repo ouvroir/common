@@ -47,63 +47,110 @@ Validation de l’application et correction des bugs (2 jours)
 - idéalement on devrait pouvoir forcer l’utilisateur à renseigner certains champs
 - les impératifs de signalement des ressources peuvent être discutés et sont subordonnés aux aspects fonctionnels
 
-# Énoncé des fonctionnalités
+---
 
-## Gestion collaborative des contenus
+## Énoncé des fonctionnalités
 
-### Espaces de travail
+### Gestion collaborative des contenus
 
-Plusieurs espaces de travail différentiés.
+#### Espaces de travail
 
-### Gestion des droits d’utilisateurs
+Plusieurs espaces de travail différentiés.Vues configurables
+
+#### Gestion des droits d’utilisateurs
 
 Gestion des droits différentiée.
-Tous les utilisateurs n’ont pas accès à tous les documents, certains accès sont réservés.
+Tous les utilisateurs n’ont pas accès à tous les documents, certains accès sont réservés. 
+
+Login ORCID? identité fédérée - 1 login pour tout ce qui est relié au partenariat dans l'idéal (site web..)
 
 Les droits sont les suivants :
 - visibilité ?
 - lecture
 - lecture et écriture
 
-### Partage des ressources
+#### Partage des ressources
 
 Gestion du partage et de la publication des documents
 
-### Travail hors ligne
+#### Travail hors ligne
 
-L’accès réseau n’est pas toujours disponible dans les archives pour la collecte de données. L’application permet de travailler hors ligne et des mécanismes de mise à jour assynchrones sont implémentés pour synchroniser les modifications.
+L’accès réseau n’est pas toujours disponible dans les archives pour la collecte de données. L’application permet de travailler hors ligne et des mécanismes de mise à jour asynchrones sont implémentés pour synchroniser les modifications.
 
 Priorité : moyenne
 
-### Interfaces de travail
+#### Interfaces de travail
 
-Saisie de champs obligatoires
-Importation en lot
-Modification en masse
-Accessibilité (handicap)
+- Saisie de champs obligatoires
+- markdown? quel éditeur de texte
+- saisie dans l'interface ou dans un back-end
 
-## Moteur de recherche
+
+
+- Importation en lot
+- Modification en masse
+- Accessibilité (handicap)
+
+#### Versionnement 
+
+Versionnement des modifications
+
+priorité: moyenne
+
+#### Collaboration en temps réel
+
+Permettre le travail collaboratif en temps réel (type Google Drive)? 
+
+priorité: basse?
+
+#### Gestion des tâches
+
+attribution de tâches à effectuer / tableau de bord (to-do list, work flow, progression)
+
+priorité: basse
+
+#### Communication entre les pairs
+
+fonctionnalité de commentaire (hypothesis?)
+
+live chat : priorité basse
+
+#### Documentation interne
+
+wiki pour chaque série de document (partage du protocole de recherche), structurer (*enforce*) la documentation
+
+priorité: basse - moyenne 
+
+#### Blog de recherche interne
+
+publication d'entrées de blog liées aux contenus et au processus de recherche (microblogging)
+
+priorité: base
+
+### Moteur de recherche
+
+Moteur de recherche plein texte sur les métadonnées
 
 Souhaite-t-on indexer automatiquement les documents PDF ?
 Appliquer de la reconnaissance automatique de caractère.
 
 Priorité : basse
 
-## Gestion des fichiers et des métadonnées
+### Gestion des fichiers et des métadonnées
 
-### Types de fichiers supportés
+#### Types de fichiers supportés
 
 - pdf
-- jpg ? autres formats d’image
+- jpg ? autres formats d’image: png, tiff (normaliser jpg et jpeg)
 - traitements de textes, tableurs ?
 
-### Gestion de structures arborescentes
+#### Gestion de structures arborescentes
 
 Les fonds archivistiques de même que les instruments de recherche présentent habitullement des structures arborescentes (dossier, sous-dossiers, et document).
 
 Priorité : basse
 
-### Standards de métadonnées supportés
+#### Standards de métadonnées supportés
 
 - Dublin Core qualifié
 
@@ -116,26 +163,64 @@ Comment décrire les images et les pdf, est-ce que Dublin Core suffit ?
 - Images ?
 - PDF 
 
-## Signalement et exposition des données
+Est-ce qu'il va y avoir des archives dans d'autres langues que le français? MBAC? 
 
-### Signalement des ressource avec OAI-PMH
+#### Annotation des images
 
-### Exposition des ressources en LOD
+annotation des images
 
-### Exposition des métadonnées avec Zotero
+priorité: basse
+
+#### Prise en charge des images
+
+#### Metrics
+
+évaluation quantitative de l'utilisation (vue, modification, partage, citation...) des documents
+
+Priorité: basse
+
+### Signalement et exposition des données
+
+#### API 
+
+avoir notre propre API? 
+
+#### Compatibilité avec une chaine éditoriale
+
+#### Signalement des ressource avec OAI-PMH
+
+#### Exposition des ressources en LOD
+
+#### Exposition des métadonnées avec Zotero
 
 Synchronisation avec l'API de Zotero (références bibliographiques, expositions)
 
-### Dépôt pérenne
+#### Dépôt pérenne
 
 Priorité : basse
 
-## Aspects techniques
+Requiert une solution pérenne sur 7 à 10 ans minimum, sans nécessairement sortir l'artillerie lourde en matière de pérennisation des données.
 
+- solutions privées: risques d'arrêt de maintenance de la solution, d'augmentation exponentielle des coûts
+- logiciels libres: existe-t-il des solutions "modernes" tant du point de vue technique que de l'interface utilisateur? (éviter Drupal par exemple)
+
+URL persistant pour chaque document? (pour le partage et la citation)
+
+#### Export des données 
+
+prévoir une façon d'exporter les données en batch ? 
+
+### Aspects techniques
+
+#### Technologie
+
+- Standards
 - WebDAV
-- Serveur IIIF
+- SoLiD et Webcomponents? 
+- Serveur IIIF (cantaloupe)
 - Base de données orientées document / SQL
 
+#### Serveur
 
-
+- installation (Docker, Ansible)
 

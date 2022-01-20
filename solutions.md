@@ -1,21 +1,6 @@
 # Solutions possibles
 
-## bdd locale + Svelte
 
-Svelte - client, communique avec une base de données avec un point d'accès REST.
-
-Serveur (baseX , express NodeJs): 
-
-- quand tu reçois ce type de requête, tu fais x 
-- quand tu reçois ce type de requête, tu fais y (image --> serveur de stockage d'image type cantaloupe)
-
-Possibilité d'avoir une interface unifiée avec BaseX qui gère les fiches (modèle documentaire: XQuery pour manipuler les langages structurés)
-
-Stocker les fichiers dans des bases de données spécifiques (webDav)
-
-hors ligne: encapsuler Svelte dans un composant electron pour avoir une app locale mais il faudrait développer un module pour la synchronisation avec le serveur (Native Svelte)
-
-option mobile: charger les photos directement depuis le téléphone? 
 
 
 ## Islandora
@@ -294,3 +279,20 @@ Questions
 Solution possible
 - organisation client/serveur.
 - RestXQ + BaseX + XForms ou un framework JavaScript.
+
+### bdd locale + Svelte
+
+Svelte - client, communique avec une base de données avec un point d'accès REST.
+
+Serveur (baseX , express NodeJs): 
+
+- quand tu reçois ce type de requête, tu fais x 
+- quand tu reçois ce type de requête, tu fais y (image --> serveur de stockage d'image type cantaloupe)
+
+Possibilité d'avoir une interface unifiée avec BaseX qui gère les fiches (modèle documentaire: XQuery pour manipuler les langages structurés)
+
+Stocker les fichiers dans des bases de données spécifiques (webDav)
+
+hors ligne: encapsuler Svelte dans un composant electron pour avoir une app locale mais il faudrait développer un module pour la synchronisation avec le serveur (Native Svelte)
+
+option mobile: charger les photos directement depuis le téléphone? 
