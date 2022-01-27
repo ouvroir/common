@@ -4,6 +4,8 @@ rencontre avec les responsables des 4 axes pour analyse des besoins (cas d'utili
 
 ## Introduction: *common*? 
 
+### Présentation générale
+
 **But**: rassembler, décrire avec des métadonnées appropriées toutes les sources mobilisées et les contenus documentaires produits dans le cadre du partenariat
 
 - documentation de redéploiments de collections (axe 1)
@@ -15,18 +17,92 @@ rencontre avec les responsables des 4 axes pour analyse des besoins (cas d'utili
 
 Ouvroir: [*Common*](https://github.com/ouvroir/common)
 
-## Étapes
-
-Préparation de la rencontre: 
-
 - évaluation des [solutions](https://github.com/ouvroir/common/blob/main/solutions.md) existantes
 - identification de [fonctionnalités](https://github.com/ouvroir/common/blob/main/fonctionnalites.md) à envisager
 
-Objectifs de la rencontre:
+### Plan de la rencontre
 
-<!-- dans quel ordre est-ce le plus utile? -->
+<!--**présentation** générale de l'outil et ses fonctionnalités envisagées (10min)-->
 
-- présentation générale des fonctionnalités envisagées
-- cas d'utilisation/scenari pour chaque axe: description des méthodes de travail prévues, dont le type de documents et de documentation, lots (quantitatif) ou analyse détaillée du contenut (qualitatif), 
-- évaluation des fonctionnalités
+- **cas d'utilisation/scenari** pour chaque axe: description des méthodes de travail prévues, dont le type de documents et de documentation, lots (quantitatif) ou analyse détaillée du contenu (qualitatif). (5-10 min par axe: ~30min)
+- **évaluation des fonctionnalités**: présentation, réponse par LimeSurvey et discussion approfondie pour les fonctionnalités jugées importantes (30min)
+- **discussion**: ajustements/précisions concernant les scenari, autres questions/fonctionnalités (15min)
+- **la suite**: étapes après la rencontre (15min)
 
+## Cas d'utilisation - scenari
+
+Description du processus de recherche envisagé: 
+
+- Quels types de documents allez-vous consulter?
+- Quel type d'informations souhaitez-vous en extraire et conserver? 
+- Comment ce travail s'organise-t-il? (lots, analyses du contenu, ...)
+- Quelle est la répartition des tâches envisagée? (travail individuel indépendant, chaîne de production-)
+- Qu'est-ce qui doit être documenté de façon systématique pour permettre l'atteinte des objectifs de recherche de l'axe?
+
+
+
+## Fonctionnalités
+
+briques logicielles:
+
+- présentation de ce qui est possible
+- en faire quelques une --> simple et bien fait
+- plus on en rajoute, plus ça devient compliqué
+
+**Gestion des fichiers et des métadonnées**
+
+- [x] Types de fichiers supportés
+- [x] Gestion de structures arborescentes
+- [x] Standards de métadonnées supportés
+- [x] Annotation des images
+- [x] Prise en charge des images
+- [x] Metrics
+
+**Gestion collaborative des contenus**
+
+- [x] Espaces de travail
+- [x] Gestion des droits d’utilisateurs
+- [x] Partage des ressources
+- [x] Travail hors ligne
+- [x] Interfaces de travail
+- [x] Versionnement 
+- [x] Collaboration en temps réel
+- [x] Gestion des tâches
+- [x] Communication entre les pairs
+- [x] Accessibilité visuelle et confort d'utilisation
+- [x] Documentation (wiki), blog de recherche interne
+- [x] Moteur de recherche
+
+
+
+**Signalement et exposition des données**
+
+- [x] API 
+- [x] Compatibilité avec une chaine éditoriale
+- [x] Signalement des ressource avec OAI-PMH
+- [x] Exposition des ressources en LOD
+- [x] Exposition des métadonnées avec Zotero
+- [x] Dépôt pérenne
+- [x] Export des données 
+
+**Aspects techniques**
+
+- Technologie
+- Serveur
+
+
+
+## Discussion
+
+
+
+
+
+
+
+## Suite
+
+ Etapes à venir: 
+
+- première version du cahier des charges et temps imparti pour d'éventuels retours/corrections)
+- calendrier: durée estimée pour la recherche d'un prestataire et réalisation de l'outil, date de disponibilité prévue (avec une réunion à prévoir pour le présenter à l'équipe).

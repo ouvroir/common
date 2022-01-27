@@ -126,7 +126,7 @@ Exemple: happy-dev.fr briques logicielles déjà conçues, Startin'blox: framewo
 
 [doc](https://cosdev.readthedocs.io/en/latest/), [git repo](https://github.com/CenterForOpenScience/osf.io)
 
-- Find papers, data, and materials to inspire your next research  project. Search public projects to build on the work of others and find  new collaborators.
+- Find papers, data, and materials to inspire your next research  prooject. Search public projects to build on the work of others and find  new collaborators.
 - Start a project and add collaborators, giving them access to protocols  and other research materials. Built-in version control tracks the  evolution of your study.
 - Store data, code, and other materials in OSF Storage, or connect your  Dropbox or other third-party account. Every file gets a unique,  persistent URL for citing and sharing.
 - Share papers in OSF Preprints or a community-based preprint provider, so others can find and cite your work. Track impact with metrics like  downloads and view counts.

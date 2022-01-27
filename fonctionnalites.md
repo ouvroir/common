@@ -36,7 +36,7 @@ Les développements informatiques reposent principalement sur l’assemblage de 
 
 ### Base de données documentaire
 
-La base de données documentaire du Partenariat CIÉCO est destinée à rassembler et décrire avec des métadonnées appropriées toutes les sources mobilisées et les contenus documentaires produits dans le cadre du partenariat (métadonnées sur les accrochages de collections, dépouillements d’archives, et sources visuelles et audiovisuelles).
+. (5-10 min par axe: ~30min)La base de données documentaire du Partenariat CIÉCO est destinée à rassembler et décrire avec des métadonnées appropriées toutes les sources mobilisées et les contenus documentaires produits dans le cadre du partenariat (métadonnées sur les accrochages de collections, dépouillements d’archives, et sources visuelles et audiovisuelles).
 
 C’est un système de gestion documentaire multi-utilisateurs qui permet l’archivage, le signalement et le partage des ressources avec des métadonnées appropriées. La base de données sera produite en utilisant le Gestionnaire de contenus libre et open source Omeka-S qui offre les fonctionnalités nécessaires pour la description des ressources avec des modèles de métadonnées métiers appropriés (Dublin Core qualifié, BIBO, LIDO, BIO-CRM, utilisation de vocabulaires SKOS [fonctionnalités offertent par défaut par Omeka-S]) tout en présentant des interfaces collaboratives facile d’emploi pour les chercheurs du projet et les auxiliaires de recherche.
 
@@ -60,11 +60,13 @@ Validation de l’application et correction des bugs (2 jours)
 
 ## Énoncé des fonctionnalités
 
+
+
 ### Gestion collaborative des contenus
 
 #### Espaces de travail
 
-Plusieurs espaces de travail différentiés.Vues configurables
+Plusieurs espaces de travail différentiés. Vues configurables
 
 #### Gestion des droits d’utilisateurs
 
@@ -78,15 +80,7 @@ Les droits sont les suivants :
 - lecture
 - lecture et écriture
 
-#### Partage des ressources
 
-Gestion du partage et de la publication des documents
-
-#### Travail hors ligne
-
-L’accès réseau n’est pas toujours disponible dans les archives pour la collecte de données. L’application permet de travailler hors ligne et des mécanismes de mise à jour asynchrones sont implémentés pour synchroniser les modifications.
-
-Priorité : moyenne
 
 #### Interfaces de travail
 
@@ -99,6 +93,14 @@ Priorité : moyenne
 - Importation en lot
 - Modification en masse
 - Accessibilité (handicap)
+
+#### Travail hors ligne
+
+L’accès réseau n’est pas toujours disponible dans les archives pour la collecte de données. L’application permet de travailler hors ligne et des mécanismes de mise à jour asynchrones sont implémentés pour synchroniser les modifications.
+
+Priorité : moyenne
+
+
 
 #### Versionnement 
 
@@ -144,6 +146,12 @@ Souhaite-t-on indexer automatiquement les documents PDF ?
 Appliquer de la reconnaissance automatique de caractère.
 
 Priorité : basse
+
+#### Partage des ressources
+
+Gestion du partage et de la publication des documents
+
+
 
 ### Gestion des fichiers et des métadonnées
 
