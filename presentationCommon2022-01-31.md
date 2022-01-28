@@ -49,46 +49,50 @@ briques logicielles:
 - en faire quelques une --> simple et bien fait
 - plus on en rajoute, plus ça devient compliqué
 
+<!-- todo list: ce qui est coché requiert une question dans le sondage-->
+
 **Gestion des fichiers et des métadonnées**
 
-- [x] Types de fichiers supportés
+- [ ] Types de fichiers supportés
+  Autres formats? 
+  Vidéo sera ailleurs (trop gros fichiers)
+- [x] Prise en charge des images - édition
+- [x] Prise en charge des images - annotation
 - [x] Gestion de structures arborescentes
-- [x] Standards de métadonnées supportés
-- [x] Annotation des images
-- [x] Prise en charge des images
+- [ ] Standards de métadonnées supportés
+  Est-qu'il y a une question ici? 
 - [x] Metrics
+  Si oui, lesquelles? 
 
 **Gestion collaborative des contenus**
 
-- [x] Espaces de travail
 - [x] Gestion des droits d’utilisateurs
-- [x] Partage des ressources
-- [x] Travail hors ligne
-- [x] Interfaces de travail
-- [x] Versionnement 
-- [x] Collaboration en temps réel
-- [x] Gestion des tâches
-- [x] Communication entre les pairs
+- [x] Espaces de travail
+- [x] Interfaces de travail - saisie & champs obligatoires
 - [x] Accessibilité visuelle et confort d'utilisation
+- [x] Collaboration en temps réel
+- [x] Travail hors ligne
+- [x] Communication différée - commentaires / annotations
+- [x] communication par messagerie instantanée
 - [x] Documentation (wiki), blog de recherche interne
+  Si oui, lesquels? 
+- [x] Gestion des tâches
+- [x] Versionnement 
 - [x] Moteur de recherche
+- [x] Partage des ressources
 
 
 
 **Signalement et exposition des données**
 
-- [x] API 
-- [x] Compatibilité avec une chaine éditoriale
+- [ ] Compatibilité avec une chaîne éditoriale
+  Autres besoins de compatibilités? 
+- [ ] API 
+- [x] Exposition des métadonnées avec Zotero
 - [x] Signalement des ressource avec OAI-PMH
 - [x] Exposition des ressources en LOD
-- [x] Exposition des métadonnées avec Zotero
 - [x] Dépôt pérenne
 - [x] Export des données 
-
-**Aspects techniques**
-
-- Technologie
-- Serveur
 
 
 
