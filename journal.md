@@ -5,8 +5,77 @@ since: 2021-11-30
 ---
 # Journal
 
+## Suivi de l'évaluation des besoins
 
-## Rencontre du 12 janvier 2022
+Cas d'utilisations et sondage des fonctionnalités
+
+#### Formats d'importation
+
+- PNG, JPG, TIF
+- PDF
+- MSWord et Excel
+- fichiers audio et vidéo
+- liens (renvois vers d'autres archives type radio-canada ou CCA)
+- 3D (sketchUp)
+- Markdown
+
+#### Images
+
+- régularité - uniformité 
+- prévoir l'uniformisation et le traitement minimal des images (bonnes pratiques pour scanner avec le téléphone)
+- annotation des images: tout le monde y est favorable. À quel niveau peut-on l'implémenter? Faire une recherche des plugins/outils libres
+
+Se concentrer sur le signalement?
+
+#### Vues 
+
+- gestion des structures arborescentes
+- chronologique, avec tags visibles
+
+Importance d'expérimenter avec des mots-clés, la catégorisation, la création de concepts ou de notion. Permettre l'édition en batch pour attribuer ou enlever des *tags*? 
+
+Pour analyse comparative: 
+
+- prévoir une vue de l'écran divisé en 2 fenêtres pré-intégrée
+- sélection d'articles en une sous-collection 
+
+#### Entités 
+
+Est-ce une arborescence? Un document doit pouvoir être rattaché à plusieurs institutions/projets/événements tout comme à aucun (événement annulé ou qui n'a pas lieu. Document hors norme)
+
+Axe de recherche <!--classer le contenu complet par axe? que faire de ce qui se recoupe?-->
+
+Institution: 
+
+- projet ? (exposition/médiation-initiative/acquisition/projet numérique...) <!-- que serait une politique (muséale ou gouvernementale)? --> 
+  - document <!-- Johanne: n'a pas nécessairement des documents "bien constitués"-->
+  - événement <!-- inclut les occurrences d'expositions?-->
+  - œuvre <!-- mais c'est typiquement le type d'entité qui est floue dans les cas d'études de l'axe 3-->
+
+Si on pense cartographie, il faut penser le degré de description de l'emplacement de chaque entité
+
+Liens avec de la bibliographie: par entité? (= un sous-dossier Zotero?)
+
+Métriques (indicateurs) pour chaque entité? (utile pour les rapports CRSH notamment, mais aussi pour avoir un retour sur l'emploi de la recherche primaire par la recherche secondaire)
+
+#### Méthodes de travail
+
+Comment permettre la répartition des tâches, simplifier/aider à déléguer?
+
+Importance de la confidentialité des documents: préciser les droits (accès, édition, partage...). Identifier les stratégies (qui, combien de temps, quelle utilisation, qui a le droit de publier en premier...)
+
+Travail collaboratif - mode hors ligne: à discuter/réfléchir d'avantage
+
+- consulter une page/entité en même temps? toujours possible. La modifier en même temps? non si ce n'est pas de la colalboration en temps réel, git permettrait de gérer une partie mais pas tout
+- veut-on des feuilles de calcul et des tableaux directement dans la BDD? Si oui, préférable d'avoir la collaboration en temps réel puisque plusieurs personnes peuvent vouloir travailler dessus en même temps
+
+Versionnement du travail <!--si ce sont des fichiers word ou excel, on fait comment?-->
+
+Annotations type Hypothesis <!-- pour que ça fonctionne, se base sur l'URL-->
+
+Saisie: champs structurés et typés <!--quelle méthode pour la validation? -->
+
+
 
 
 
