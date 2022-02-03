@@ -25,7 +25,7 @@ Ouvroir: [*Common*](https://github.com/ouvroir/common)
 <!--**présentation** générale de l'outil et ses fonctionnalités envisagées (10min)-->
 
 - **cas d'utilisation/scenari** pour chaque axe: description des méthodes de travail prévues, dont le type de documents et de documentation, lots (quantitatif) ou analyse détaillée du contenu (qualitatif). (5-10 min par axe: ~30min)
-- **évaluation des fonctionnalités**: présentation, réponse par LimeSurvey et discussion approfondie pour les fonctionnalités jugées importantes (30min)
+- **évaluation des fonctionnalités**: présentation, réponse par Zoom et discussion approfondie pour les fonctionnalités jugées importantes (30min)
 - **discussion**: ajustements/précisions concernant les scenari, autres questions/fonctionnalités (15min)
 - **la suite**: étapes après la rencontre (15min)
 
@@ -59,10 +59,10 @@ briques logicielles:
 - [x] Prise en charge des images - édition
 - [x] Prise en charge des images - annotation
 - [x] Gestion de structures arborescentes
-- [ ] Standards de métadonnées supportés
-  Est-qu'il y a une question ici? 
 - [x] Metrics
   Si oui, lesquelles? 
+- [ ] Standards de métadonnées supportés
+  Est-qu'il y a une question ici? 
 
 **Gestion collaborative des contenus**
 
@@ -87,7 +87,7 @@ briques logicielles:
 
 - [ ] Compatibilité avec une chaîne éditoriale
   Autres besoins de compatibilités? 
-- [ ] API 
+- [x] API 
 - [x] Exposition des métadonnées avec Zotero
 - [x] Signalement des ressource avec OAI-PMH
 - [x] Exposition des ressources en LOD
@@ -106,7 +106,7 @@ briques logicielles:
 
 ## Suite
 
- Etapes à venir: 
+ Étapes à venir: 
 
 - première version du cahier des charges et temps imparti pour d'éventuels retours/corrections)
 - calendrier: durée estimée pour la recherche d'un prestataire et réalisation de l'outil, date de disponibilité prévue (avec une réunion à prévoir pour le présenter à l'équipe).
