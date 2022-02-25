@@ -7,23 +7,26 @@ since: 2021-11-30
 
 ## Suivi de l'évaluation des besoins
 
-Cas d'utilisations et sondage des fonctionnalités
+Cas d’utilisations et sondage des fonctionnalités
 
-#### Formats d'importation
-
+#### Formats d’importation
+Les besoins de gestion de fichiers sont très divers et incluent des fichiers bureautiques, des images.
 - PNG, JPG, TIF
 - PDF
 - MSWord et Excel
-- fichiers audio et vidéo
-- liens (renvois vers d'autres archives type radio-canada ou CCA)
+- liens (renvois vers d’autres archives type radio-canada ou CCA)
 - 3D (sketchUp)
+- fichiers audio et vidéo
 - Markdown
+
+Les fichiers 3D et vidéos doivent être pris en charge optionnellement car ils peuvent être mieux gérés sur des applications dédiées.
 
 #### Images
 
+Les chercheur·se·s du projet manipulent abondamment des contenus visuels. Le travail sur ce matériau réclame des outils spécifiques pour travailler de manière commode.
 - régularité - uniformité 
 - prévoir l'uniformisation et le traitement minimal des images (bonnes pratiques pour scanner avec le téléphone)
-- annotation des images: tout le monde y est favorable. À quel niveau peut-on l'implémenter? Faire une recherche des plugins/outils libres
+- annotation des images : tout le monde y est favorable. À quel niveau peut-on l’implémenter ? Faire une recherche des plugins/outils libres
 
 Se concentrer sur le signalement?
 
@@ -35,9 +38,8 @@ Se concentrer sur le signalement?
 Importance d'expérimenter avec des mots-clés, la catégorisation, la création de concepts ou de notion. Permettre l'édition en batch pour attribuer ou enlever des *tags*? 
 
 Pour analyse comparative: 
-
-- prévoir une vue de l'écran divisé en 2 fenêtres pré-intégrée
-- sélection d'articles en une sous-collection 
+- prévoir la possibilité de visualiser deux ressources côte-à-côte pour les comparer (divise l'écran divisé en 2 fenêtres)
+- sélection de ressources en une sous-collection 
 
 #### Entités 
 
@@ -45,12 +47,12 @@ Est-ce une arborescence? Un document doit pouvoir être rattaché à plusieurs i
 
 Axe de recherche <!--classer le contenu complet par axe? que faire de ce qui se recoupe?-->
 
-Institution: 
+Institution/établissement: 
 
 - projet ? (exposition/médiation-initiative/acquisition/projet numérique...) <!-- que serait une politique (muséale ou gouvernementale)? --> 
-  - document <!-- Johanne: n'a pas nécessairement des documents "bien constitués"-->
-  - événement <!-- inclut les occurrences d'expositions?-->
-  - œuvre <!-- mais c'est typiquement le type d'entité qui est floue dans les cas d'études de l'axe 3-->
+- document <!-- Johanne: n'a pas nécessairement des documents "bien constitués"-->
+- événement <!-- inclut les occurrences d'expositions?-->
+- œuvre <!-- mais c'est typiquement le type d'entité qui est floue dans les cas d'études de l'axe 3-->
 
 Si on pense cartographie, il faut penser le degré de description de l'emplacement de chaque entité
 
