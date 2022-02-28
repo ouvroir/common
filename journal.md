@@ -5,6 +5,59 @@ since: 2021-11-30
 ---
 # Journal
 
+## Nouvel état de la situation
+
+suite aux rencontre d'équipes axe1 et axe3: orientation vers [Zotero](https://www.zotero.org/support/)
+
+Avantages: 
+
+- client desktop MacOS + windows + linux + web (& data syncing)
+- extension navigateur
+- API
+- produit des bibliographies et modèle de citation
+- retrieve PDF metadata + PDF indexing can be enabled (At this time, only PDF full text content (and plain text files) can be  indexed by Zotero. Other document types (e.g., .docx, .odt, .epub)  cannot be indexed by Zotero. ) + annotations (zotfile)
+- Feed RSS pour faire des états de l'art etc.
+- tags, notes, relations (zutilo plugin)
+- proxy pour lecture de contenus avec accès institutionnel
+- 
+
+
+
+À discuter: 
+
+- si on utilise Zotero, on héberge sur Zotero directement aussi? Où on héberge dans un service distinct qui crée (par exemple) des url pérennes? 
+  - Zotero lab: $30 per user, with a minimum of 15 users.
+  - Zotero institution: universitaire, mais pourrait peut-être fonctionner pour le Partenariat comme groupe de recherche
+  - [Zotero + webDav](https://www.zotero.org/support/preferences/sync#file_syncing)
+- quels formats (attachements) ne sont pas pris en charge? à tester?
+- [importation](https://www.zotero.org/support/kb/importing_standardized_formats): formats bibliographiques standardisés type RDF, CSL JSON et BibText
+- versionnement? 
+- explorer les [plugin](https://www.zotero.org/support/plugins)
+
+
+
+Ajouts : développements "par dessus"
+
+- "formulaires" modèle types (exposition, document d'archive....)
+- droits différenciés plus complexes
+  - In order to start using OAuth to create API keys on behalf of users, you must [register your application with Zotero](https://www.zotero.org/oauth/apps) to obtain a Client Key and Client Secret for use during all future  OAuth handshakes between your application/website and zotero.org. Note  that after you obtain an API key for a particular user these client  credentials are not required for further Zotero API requests.
+
+- visualisation
+- vue par image / édition / annotation des images? 
+- éditeur de texte (markdown? versionner le texte?)
+- diffusion RSS
+
+
+
+Étapes de travail: 
+
+- mise en place dans les projets actuels
+  - définir les "utilisations de bases", liste de bonnnes pratiques à respecter
+  - définir architecture (qui crée des collections pour des droits d'accès bien gérés: group member vs group admin → library reading, library editing, file editing)
+- phases de développement d'un outil plus avancé 
+
+
+
 ## Suivi de l'évaluation des besoins
 
 Cas d’utilisations et sondage des fonctionnalités
