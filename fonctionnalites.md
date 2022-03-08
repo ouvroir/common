@@ -36,7 +36,7 @@ Les développements informatiques reposent principalement sur l’assemblage de 
 
 ### Base de données documentaire
 
-. (5-10 min par axe: ~30min)La base de données documentaire du Partenariat CIÉCO est destinée à rassembler et décrire avec des métadonnées appropriées toutes les sources mobilisées et les contenus documentaires produits dans le cadre du partenariat (métadonnées sur les accrochages de collections, dépouillements d’archives, et sources visuelles et audiovisuelles).
+La base de données documentaire du Partenariat CIÉCO est destinée à rassembler et décrire avec des métadonnées appropriées toutes les sources mobilisées et les contenus documentaires produits dans le cadre du partenariat (métadonnées sur les accrochages de collections, dépouillements d’archives, et sources visuelles et audiovisuelles).
 
 C’est un système de gestion documentaire multi-utilisateurs qui permet l’archivage, le signalement et le partage des ressources avec des métadonnées appropriées. La base de données sera produite en utilisant le Gestionnaire de contenus libre et open source Omeka-S qui offre les fonctionnalités nécessaires pour la description des ressources avec des modèles de métadonnées métiers appropriés (Dublin Core qualifié, BIBO, LIDO, BIO-CRM, utilisation de vocabulaires SKOS [fonctionnalités offertent par défaut par Omeka-S]) tout en présentant des interfaces collaboratives facile d’emploi pour les chercheurs du projet et les auxiliaires de recherche.
 

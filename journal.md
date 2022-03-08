@@ -3,60 +3,191 @@ title: Journal
 since: 2021-11-30
 
 ---
-# Journal
+# Journal *common*
 
-## Nouvel état de la situation
+## Séance de travail (8 mars 2022)
 
-suite aux rencontre d'équipes axe1 et axe3: orientation vers [Zotero](https://www.zotero.org/support/)
+Zotero
 
+- utiliser l'API et créer un 
+
+
+
+
+
+## Séance de travail (7 mars 2022)
+
+
+
+### Tests HSS commons
+
+Création d'un projet et ajout de ressources externes
+
+- lien vers le drive: difficulté à paramétrer
+  - seule option = current directory... 
+- github: ne fonctionne pas... (404 pour https://github.com/ouvroir/labouvroir)
+
+Todo: old school mais fonctionnel
+
+Notes: versionnement + commentaires, éditeur wiki markup, tags
+
+Je me sens décidemment surveillée dans l'onglet *Updates*...
+
+Proposition de rencontre le 17 mars, préparer une liste de questions d'ici là
+
+### Test API
+
+<!-- @lenamk start Postman_ cd ~/opt/Postman → ./Postman -->
+
+#### Zotero
+
+- [Client API javascript](https://github.com/tnajdek/zotero-api-client)
+- requêtes de base très facile
+
+#### Google
+
+- on peut prendre un document et "publish to the web" mais ce serait public
+- pour créer une API → Google Cloud Project
+  - Google Cloud : 300$ free credits to explore and conduct an assessment of Google cloud platform
+  - 20+ free products, up to monthly limits: [details and full program](https://cloud.google.com/free/docs/gcp-free-tier)
+  - enable GoogleSheets API
+  - create credentials 
+    - Are you planning to use this API with Compute Engine, Kubernetes Engine, App Engine, or Cloud Functions? Applications running on GCE, GKE, GAE, and GCF can use Application Default Credentials and don't require that you create a credential.
+  - 
+
+### Installation cantaloupe
+
+todo
+
+
+
+
+
+## Rencontre de travail (3 mars 2022)
+
+Penser malin, ne pas chercher nécessairement une solution qui fait tout.
+
+- Quid des logiciels identifiés ? (bilan sur les recherches déjà faites)
+- Quid des besoins exprimés par l’équipe ?
+  - très changeants
+- De quoi pourraient-ils avoir besoin auxquels ils ne pensent pas ?
+- Comment se positionner en support à nos chercheurs ?
+- Quels scénarios (Zotero) ?
+
+### Quid des logiciels identifiés ? (bilan sur les recherches déjà faites)
+
+#### Solutions logicielles dédiées pour le partage de documents ou de contenus en contexte de recherche
+
+
+Il existe plusieurs solutions logicielles dédiées pour le partage de documents ou de contenus en contexte de recherche.
+- Islandora (drupal)
+- HSS Commons (HubZéro)
+- Omeka-S
+
+Ce sont des solutions libres développées en contexte académique qui présentent donc un certain nombre de caractéristiques intéressantes pour le travail que nous voulons mener :
+- utilisation de standards de métadonnées descriptives
+- exposition des données OAI-PMH
+- orientation préservation et archivage à long terme
+- compatibilité avec certains services d’identité numérique (ORCID, etc.)
+- compatibilité avec certains outils de travail des chercheurs (Zotero)
+
+Dans le cas d’Islandora et de HSS Commons, il s’agit de suites logicielles relativement complexes qui présentent plusieurs dépendances logicielles. L’utilisation des logiciels est plus ou moins ergonomique et nécessite sans doute un apprentissage important (tout particulièrement Islandora). Le modèle de plateforme pour les chercheurs développé par HSS Commons autour de HubZéro permet de disposer gratuitement des fonctionnalités administrées par un établissement de recherche au Canada. Toutefois HubZéro est surtout centré sur le partage de l’information scientifique et la création de communauté et est moins adapté qu’Islandora pour le travail sur la documentation figurée et les documents d’archives. Les fonctionnalités de gestion de fichiers restent très limités dans HubZéro qui mise plus sur le dialogue scientifique. 
+
+Omeka-S est un système de gestion de contenu (CMS) particulièrement flexible qui permet l’utilisation de standards de description de métadonnées et offre une compatibilité avec Zotero et une API. Mais ses interfaces génériques sont peu ergonomiques à moins d’un investissement important dans le design d’interfaces. Les retours d’utilisateurs de plusieurs collègues utilisant le logiciel sont contrastés. Le logiciel repose sur une conception web relativement ancienne, et la nouvelle version ne bénéficie pas de développement très actifs depuis quelques années. Nombre de plugins initialement disponibles pour Omeka n’ont pas été portés dans Omeka-S.
+
+Les trois solutions offrent une gestion fine des droits d’utilisateurs. L’interface d’administration d’Omeka ne permet pas de contrôler l’accès aux ressources qui restent visibles pour tous les utilisateurs.
+
+Aucune des solutions passées en revue n’est réellement satisfaisante pour une approche visuelle des contenus. Les fonctionnalités d’affichage restent largement déterminées par l’outil ou le cadre technique utilisé par le logiciel.
+
+- Islandora est une solution trop lourde à mettre en œuvre pour nos besoins et qui risque de présenter des difficultés importantes d’adoption. L’infrastructure repose sur Drupal et plusieurs dépendances.
+- HSS Commons, ne constitue pas en soi une solution entièrement satisfaisante pour la gestion des fichiers et particulièrement des images mais ses fonctionnalités de communautés de recherche pourraient être mises à profit pour le projet. Il n’est pas très clair si le projet canadien dispose déjà d’une API. Les métadonnées sont très limités.
+- Omeka-S présente un réel intérêt en raison de sa flexibilité et de sa compatibilité avec Zotero. La gestion des droits restent limité et plusieurs retours utilisateurs nous alertent sur les limites du logiciel. L’API utilise JSONLD mais avec des fonctionnalités très limitées.
+
+#### Cantaloupe
+
+##### version lourde
+version alimentée par une API
+- cantaloupe est le serveur d'image
+- webDav pour les fichiers
+- client web qui fait toutes les interactions (en svelte ou react)
+    - authentification (module à réutiliser pour tout le partenariat)
+
+##### version légère
+version parasite Bernard l'hermitte
+- on squatte des services web (qui propose une API) et on se crée un client pour s'y connecter
+- outils low tech orchestrés par notre client
+
+Ne pas démultiplier les recours aux prestataires de services pour éviter la surcharge.
+Pb rédaction cahier des charges.
+
+#### Développer un système de style
+
+Exemple de [Carbon Design System](https://www.carbondesignsystem.com/)
+
+Trouver une personne qui serait capable de créer des composants ou faire un thème à partir du système existant.
+Faire appel à William pour faire l'intégration à l'interne. Créer l'API est léger.
+
+
+#### Strapi
+Inconvénients
+- interface pas très commode, 
+- gestion de format pdf
+
+
+#### Google Doc
+utiliser l'API pour récupérer les données dans le tableur
+
+#### Standford IIIF services
+Utilisation de IIF pour toutes les images?
+Que faire des images de mauvaises qualités et des numérisation directement en PDF? PDF sur Zotero
+
+
+#### Solution d’un client web
+Outil de gestion des documents interne
+- tableau de bord et dataviz (aiderait beaucoup à l'adoption)
+- créer soi-même formulaire de saisies (fiches signalétiques)
+- Zotero servirait pour le stockage des PDFs et les références bibliographiques
+- gérer les interactions avec les APIs
+- IIIF: visionneuse , annotations
+- signalement des ressources
+- authentification
+- sécuriser le tout
+- option en ligne/hors-ligne avec un client web qui peut être déployé comme une application avec Electron (multiplateforme), se connecte à une BD locale (compatible hors-ligne).
+
+
+#### XML
+Avantage:
+- facilité pour Emmanuel pour faire des modifs
+Inconvénient: 
+- difficulté à trouver un dev
+
+#### CouchDB
 Avantages: 
+- BD orientée document, en JSON
+- facile d'utilisation
+- crée des GraphQL
+Inconvénients: 
+- requiert langage intermédiaire SQL 
 
-- client desktop MacOS + windows + linux + web (& data syncing)
-- extension navigateur
-- API
-- produit des bibliographies et modèle de citation
-- retrieve PDF metadata + PDF indexing can be enabled (At this time, only PDF full text content (and plain text files) can be  indexed by Zotero. Other document types (e.g., .docx, .odt, .epub)  cannot be indexed by Zotero. ) + annotations (zotfile)
-- Feed RSS pour faire des états de l'art etc.
-- tags, notes, relations (zutilo plugin)
-- proxy pour lecture de contenus avec accès institutionnel
-- 
+HSS commons comme outil de communication
 
+### Plan 
 
+d'ici fin mars
 
-À discuter: 
-
-- si on utilise Zotero, on héberge sur Zotero directement aussi? Où on héberge dans un service distinct qui crée (par exemple) des url pérennes? 
-  - Zotero lab: $30 per user, with a minimum of 15 users.
-  - Zotero institution: universitaire, mais pourrait peut-être fonctionner pour le Partenariat comme groupe de recherche
-  - [Zotero + webDav](https://www.zotero.org/support/preferences/sync#file_syncing)
-- quels formats (attachements) ne sont pas pris en charge? à tester?
-- [importation](https://www.zotero.org/support/kb/importing_standardized_formats): formats bibliographiques standardisés type RDF, CSL JSON et BibText
-- versionnement? 
-- explorer les [plugin](https://www.zotero.org/support/plugins)
+- cahier des charges
+- justifier les choix
 
 
+- explorer API Zotero
 
-Ajouts : développements "par dessus"
+- lire la doc cantaloupe
 
-- "formulaires" modèle types (exposition, document d'archive....)
-- droits différenciés plus complexes
-  - In order to start using OAuth to create API keys on behalf of users, you must [register your application with Zotero](https://www.zotero.org/oauth/apps) to obtain a Client Key and Client Secret for use during all future  OAuth handshakes between your application/website and zotero.org. Note  that after you obtain an API key for a particular user these client  credentials are not required for further Zotero API requests.
+- session installation locale de Cantaloupe (15 mars?) attention: config Java ou sinon, Docker
 
-- visualisation
-- vue par image / édition / annotation des images? 
-- éditeur de texte (markdown? versionner le texte?)
-- diffusion RSS
+  
 
-
-
-Étapes de travail: 
-
-- mise en place dans les projets actuels
-  - définir les "utilisations de bases", liste de bonnnes pratiques à respecter
-  - définir architecture (qui crée des collections pour des droits d'accès bien gérés: group member vs group admin → library reading, library editing, file editing)
-- phases de développement d'un outil plus avancé 
-
-
+___
 
 ## Suivi de l'évaluation des besoins
 
@@ -136,7 +267,7 @@ Saisie: champs structurés et typés <!--quelle méthode pour la validation? -->
 
 ## Rencontre du 11 janvier 2022
 
-Discussion de solutions possibles avec Svelete ou Islandora
+Discussion de solutions possibles avec Svelte ou Islandora
 évaluation de la solution Svelte
 
 ## Recherche sur les solutions actuelles - 10 janvier 2022

@@ -7,7 +7,7 @@
 
 [web](https://islandora.ca/), [sandbox demo](https://islandora.ca/try), [git repo](https://github.com/Islandora/islandora), [documentation](https://islandora.github.io/documentation/)
 
-- **Islandora**  is an open-source software framework  designed to help institutions and organizations and their audiences  collaboratively manage, and discover digital assets using a  best-practices framework
+- **Islandora**  is an open-source software framework designed to help institutions and organizations and their audiences  collaboratively manage, and discover digital assets using a  best-practices framework
 - Drupal CMS as interface. Build in website front-end. Feodra as storage layer
 - Islandora 7: Drupal as presentation layer, Islandora makes drupal manage the fedora contents. Options to add custom "toppings"
 - Islandora 8: more modular application. All components can be removed and repalces easily. Customisation through the UI
@@ -206,7 +206,7 @@ Solution possible
 Avantage
 - solution prédéfinie
 - respect des standards
-- possibilité d’utiliser des vocabulaires contraires
+- possibilité d’utiliser des vocabulaires contraints
 - flexibilité des modèles de métadonnées
 - compatibilité Zotero et Trello
 - API OAI-PMH
@@ -235,10 +235,12 @@ Avantages
 
 Inconvénients
 - interface d'édition générique, n'est pas l'interface de publication (on édite les contenus sur un backend)
+- on voudrait des champs de saisies plus ergonomiques
 - gestion des utilisateurs payante (abonnement) mais gratuité pour l'éducation
 - logiciels tiers créent une dette technologique assez forte: node.js, environnement pas très stable (beaucoup de dépendances plugins et npms, obsolescence rapide) + interface construite avec React
 - durée de vie plutôt courte des CMS
 - difficulté à trouver un client pour un headless CMS? trouver un développeur pour le faire
+- pas de gestion des notes de bas de page, ni  des typographie fine (exposants)
 
 Solution possible
 - Créer des formulaires pour chaque type de ressources, qu'on peut adapter au fur et à mesure des besoins
@@ -296,3 +298,65 @@ Stocker les fichiers dans des bases de données spécifiques (webDav)
 hors ligne: encapsuler Svelte dans un composant electron pour avoir une app locale mais il faudrait développer un module pour la synchronisation avec le serveur (Native Svelte)
 
 option mobile: charger les photos directement depuis le téléphone? 
+
+
+
+## Cantaloupe
+
+### version lourde
+version alimentée par une API
+- cantaloupe est le serveur d'image
+- webDav pour les fichiers
+- client web qui fait toutes les interactions (en svelte ou react)
+    - authentification (module à réutiliser pour tout le partenariat)
+
+### version légère
+version parasite Bernard l'hermitte
+- on squatte des services web (qui propose une API) et on se crée un client pour s'y connecter
+- outils low tech orchestrés par notre client
+
+## Zotero
+
+suite aux rencontre d'équipes axe1 et axe3: orientation vers [Zotero](https://www.zotero.org/support/)
+
+Avantages: 
+
+- client desktop MacOS + windows + linux + web (& data syncing)
+- extension navigateur
+- API
+- produit des bibliographies et modèle de citation
+- retrieve PDF metadata + PDF indexing can be enabled (At this time, only PDF full text content (and plain text files) can be  indexed by Zotero. Other document types (e.g., .docx, .odt, .epub)  cannot be indexed by Zotero. ) + annotations (zotfile)
+- Feed RSS pour faire des états de l'art etc.
+- tags, notes, relations (zutilo plugin)
+- proxy pour lecture de contenus avec accès institutionnel
+
+À discuter: 
+
+- si on utilise Zotero, on héberge sur Zotero directement aussi? Où on héberge dans un service distinct qui crée (par exemple) des url pérennes? 
+  - Zotero lab: $30 per user, with a minimum of 15 users.
+  - Zotero institution: universitaire, mais pourrait peut-être fonctionner pour le Partenariat comme groupe de recherche
+  - [Zotero + webDav](https://www.zotero.org/support/preferences/sync#file_syncing)
+- quels formats (attachements) ne sont pas pris en charge? à tester?
+- [importation](https://www.zotero.org/support/kb/importing_standardized_formats): formats bibliographiques standardisés type RDF, CSL JSON et BibText
+- versionnement? 
+- explorer les [plugin](https://www.zotero.org/support/plugins)
+
+Ajouts : développements "par dessus"
+
+- "formulaires" modèle types (exposition, document d'archive....)
+- droits différenciés plus complexes
+  - In order to start using OAuth to create API keys on behalf of users, you must [register your application with Zotero](https://www.zotero.org/oauth/apps) to obtain a Client Key and Client Secret for use during all future  OAuth handshakes between your application/website and zotero.org. Note  that after you obtain an API key for a particular user these client  credentials are not required for further Zotero API requests.
+
+- visualisation
+- vue par image / édition / annotation des images? 
+- éditeur de texte (markdown? versionner le texte?)
+- diffusion RSS
+
+
+
+Étapes de travail: 
+
+- mise en place dans les projets actuels
+  - définir les "utilisations de bases", liste de bonnnes pratiques à respecter
+  - définir architecture (qui crée des collections pour des droits d'accès bien gérés: group member vs group admin → library reading, library editing, file editing)
+- phases de développement d'un outil plus avancé 
