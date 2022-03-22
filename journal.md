@@ -7,11 +7,24 @@ since: 2021-11-30
 
 ## Séance de travail (8 mars 2022)
 
-Zotero
+### Tests Zotero
+- utiliser l'API, semble fonctionner de façon complète (toutes les fonctionnalités logicielles)
+- créer une couche par dessus pour ce qu'il manque (événements)
 
-- utiliser l'API et créer un 
 
+Svelte: permettrait de tweaker l'API Zotero
+- utiliser svelte pour requêter l'API (js / graphql) 
 
+Trouver un composant de base de données qui serait "directement pluggable"
+
+### Quel format pour les données
+#### couchDB et Mango DB
+avantage: options hors ligne
+inconvénient: SQL (ne fait pas de json)
+
+### XML: language standardisé de manipulation de données 
+- requis pour l'édition numérique
+- 
 
 
 
