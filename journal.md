@@ -5,6 +5,72 @@ since: 2021-11-30
 ---
 # Journal *common*
 
+## Séance de travail (22 mars 2022)
+
+utilisation de Zotero pour les pdfs et archives
+
+architecture client-serveur basée sur la consommation d'API qui permet de gérer des ressources avec Zotero, des images avec IIIF et un entrepot IIIF. On investit l'argent sur la construction d'une infrastructure qui serait un client web (associé à une base de données) qui permet de gérer un tableau de bord, d'entrer des données qui ne sont pas gérables par Zotero (événements historiques) et de les mettre en lien avec les ressources documentaires stockées dans Zotero et autres services web (serveur d'images cantaloupe)
+
+peut-on faire un moteur de recherche avec des documents stockés en pdf? 
+
+- restocker les documents
+- héberger zotero: faire notre propre zotero, permet de raffiner l'autentification? 
+- auto-héberger l'API Zotero?
+
+https://www.zotero.org/blog/
+
+auto-hébergement semble difficile faute de documentation, à vérifier en contactant Sean Takats (sean.takats@uni.lu)
+
+```
+Cher Sean,
+
+Nous travaillons actuellement sur un projet de recherche pour lequel nous envisageons une utilisation plutôt intensive de Zotero au sein de l’équipe de recherche. Pour certaines fonctionnalités, nous nous demandons s’il ne pourrait pas être intéressant d’auto-héberger un serveur Zotero et éventuellement d’en augmenter les fonctionnalités.
+
+Pourrais-tu, s’il te plaît, m’indiquer quelle est votre roadmap actuelle sur cet aspect du projet ? Avez-vous prévu à court ou moyen terme des évolutions de cette partie du logiciel dont il faudrait tenir compte ? Serait-il possible de contribuer utilement au logiciel d’une manière ou d’une autre ?
+
+D’après la recherche préliminaire que nous avons faites dans le forum et la documentation, voici les ressources identifies.
+
+Est-ce que c’est bien toujours ce repo qu’il faut utiliser
+https://github.com/zotero/dataserver
+
+Il était question d’une distribution Docker, où se trouve-t-elle ?
+https://github.com/gfacciol/zotero_dataserver-docker
+
+Nous avons-vu que la synchronisation des fichiers impliquait un serveur WebDAV sur Amazon.
+```
+
+
+
+La documentation est assez sommaire sur Github. Existe
+
+https://forums.zotero.org/discussion/73721/zotero-self-hosted
+https://forums.zotero.org/discussion/comment/309275
+https://forums.zotero.org/discussion/comment/316306
+
+https://github.com/zotero/dataserver
+https://github.com/mrtcode/zotero-server
+https://github.com/gfacciol/zotero_dataserver-docker
+
+
+
+
+
+développeurs? 
+
+- conjoint de Marina
+- envoyer une demande sur Astro
+
+- [ ] préparer une question pour le forum pour l'autohébergement + système de fichier avec webDav? 
+- [ ] décrire ce que ferait le client, à quoi il doit correspondre
+  - [ ] description la plus générique possible, pour préciser nos besoins au fur et à mesure
+  - [ ] architecture de base / template d'interactions
+  - [ ] vocabulaire graphique (composants, hayden designer? )
+  - [ ] briques qui pourront évoluer selon les projets
+- [ ] proposer une rencontre (demander à Josée un lundi qui pourrait fonctionner: 11 avril?) 
+  - présenter le scénario Zotero
+  - d'ici là, avancer au maximum sur le cahier des charges pour présenter les orientations principales
+  - ateliers spécialisés pour chaque axe?
+
 ## Séance de travail (8 mars 2022)
 
 ### Tests Zotero
