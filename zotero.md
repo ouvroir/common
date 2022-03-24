@@ -83,6 +83,23 @@ Official zotero data server
 
 
 
-## WebDav
+## FileSync
 
-self-host filesoui
+[Zotero file Syncing options](https://www.zotero.org/support/preferences/sync#file_syncing)
+
+### Zotero Storage
+
+Zotero Storage is the recommended file sync option. It has several  advantages over WebDAV syncing, including syncing of files in [group libraries](https://www.zotero.org/support/groups), web-based access to PDFs and other attachments, easier setup,  guaranteed compatibility, and improved upload performance for certain  files. Each Zotero user is given 300 MB of free Zotero Storage for  attached files, with [larger storage plans](https://www.zotero.org/support/storage#storage_pricing) available for purchase.
+
+See the [Zotero Storage](https://www.zotero.org/support/storage) documentation for more information.
+
+**Attention! ** Only Zotero File Storage is supported for group libraries.
+
+### WebDAV
+
+WebDAV is a standard protocol for transferring files over the web, and  it can be used to sync files in your personal library. (Group libraries  cannot use WebDAV.) Your employer or research institution may be able to provide WebDAV storage. Otherwise, there are many third-party options,  both free and paid (see [WebDAV providers known to work with Zotero](https://www.zotero.org/support/kb/webdav_services)).
+
+Once you have your WebDAV account info, enter the URL provided by the service, your username, and your password in the [Sync preferences tab](https://www.zotero.org/support/preferences/sync#file_syncing). Be sure to select 'http' or 'https' as appropriate — if you're not  sure, try 'https' first. After entering the information, click “Verify  Server”. If Zotero successfully verifies the WebDAV account, you're all  set to use file syncing via WebDAV.
+
+Zotero file sync should work with any correctly functioning WebDAV  server. Zotero developers cannot provide support for third-party WebDAV  servers.
+
