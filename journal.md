@@ -5,6 +5,13 @@ since: 2021-11-30
 ---
 # Journal *common*
 
+## Check list pour la rencontre du 11 avril 
+
+- [ ] choisir si on crée un [compte institutionnel](https://www.zotero.org/storage/institutions) pour le labo/Partenariat (pour le moment)
+- [ ] tester l'annotation collaborative pour les groupes (& l'ajout de fichiers)
+
+
+
 ## Séance de travail (22 mars 2022)
 
 utilisation de Zotero pour les pdfs et archives
@@ -17,7 +24,7 @@ peut-on faire un moteur de recherche avec des documents stockés en pdf?
 - héberger zotero: faire notre propre zotero, permet de raffiner l'autentification? 
 - auto-héberger l'API Zotero?
 
-https://www.zotero.org/blog/
+^https://www.zotero.org/blog/
 
 auto-hébergement semble difficile faute de documentation, à vérifier en contactant Sean Takats (sean.takats@uni.lu)
 
@@ -43,14 +50,6 @@ Nous avons-vu que la synchronisation des fichiers impliquait un serveur WebDAV s
 
 La documentation est assez sommaire sur Github. Existe
 
-https://forums.zotero.org/discussion/73721/zotero-self-hosted
-https://forums.zotero.org/discussion/comment/309275
-https://forums.zotero.org/discussion/comment/316306
-
-https://github.com/zotero/dataserver
-https://github.com/mrtcode/zotero-server
-https://github.com/gfacciol/zotero_dataserver-docker
-
 
 
 
@@ -58,18 +57,10 @@ https://github.com/gfacciol/zotero_dataserver-docker
 développeurs? 
 
 - conjoint de Marina
+
 - envoyer une demande sur Astro
 
-- [ ] préparer une question pour le forum pour l'autohébergement + système de fichier avec webDav? 
-- [ ] décrire ce que ferait le client, à quoi il doit correspondre
-  - [ ] description la plus générique possible, pour préciser nos besoins au fur et à mesure
-  - [ ] architecture de base / template d'interactions
-  - [ ] vocabulaire graphique (composants, hayden designer? )
-  - [ ] briques qui pourront évoluer selon les projets
-- [ ] proposer une rencontre (demander à Josée un lundi qui pourrait fonctionner: 11 avril?) 
-  - présenter le scénario Zotero
-  - d'ici là, avancer au maximum sur le cahier des charges pour présenter les orientations principales
-  - ateliers spécialisés pour chaque axe?
+  
 
 ## Séance de travail (8 mars 2022)
 
