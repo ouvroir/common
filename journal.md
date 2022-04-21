@@ -5,10 +5,20 @@ since: 2021-11-30
 ---
 # Journal *common*
 
-## Check list pour la rencontre du 11 avril 
+## Check list pour la rencontre du 26 avril 
 
 - [ ] choisir si on crée un [compte institutionnel](https://www.zotero.org/storage/institutions) pour le labo/Partenariat (pour le moment)
 - [ ] tester l'annotation collaborative pour les groupes (& l'ajout de fichiers)
+
+## Séance de travail (21 avril)
+
+[Penpot board](https://design.penpot.app/#/workspace/4b3d2990-86a8-11ec-a81e-9eafb5cb1e0f/47380880-c1a2-11ec-bc13-c5ff4adc2ae3?page-id=47380881-c1a2-11ec-bc13-c5ff4adc2ae3)
+
+Choix d'interlocuteurs
+
+
+
+
 
 
 
