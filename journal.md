@@ -5,6 +5,186 @@ since: 2021-11-30
 ---
 # Journal *common*
 
+## Préparation de la présentation du 3 mai
+
+[canva](https://www.canva.com/design/DAE-6yOGl-s/EUqTWwLv21I_xquY2aBssA/edit?utm_content=DAE-6yOGl-s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+
+DIA 1
+
+Projet initial : base de données documentaire
+
+>La base de données documentaire du Partenariat CIÉCO est destinée à rassembler et décrire avec des métadonnées appropriées toutes les sources mobilisées et les contenus documentaires produits dans le cadre du partenariat (métadonnées sur les accrochages de collections, dépouillements d’archives, et sources visuelles et audiovisuelles).
+
+>C’est un système de gestion documentaire multi-utilisateurs qui permet l’archivage, le signalement et le partage des ressources avec des métadonnées appropriées. La base de données sera produite en utilisant le Gestionnaire de contenus libre et open source Omeka-S qui offre les fonctionnalités nécessaires pour la description des ressources avec des modèles de métadonnées métiers appropriés (Dublin Core qualifié, BIBO, LIDO, BIO-CRM, utilisation de vocabulaires SKOS [fonctionnalités offertes par défaut par Omeka-S]) tout en présentant des interfaces collaboratives facile d’emploi pour les chercheurs du projet et les auxiliaires de recherche.
+
+Ce n’est pas finalement ce que nous allons faire [rayer la diapo ?]
+
+DIA 2
+
+Phase de recueil des besoins
+
+Rappel sur les différentes rencontres qui ont eu lieu :
+- 1 rencontre collective
+- 3 rencontres avec Marie sur Expots
+- 1 rencontre avec Mélanie
+- résumé des activités de l'axe 4
+
+Synthèse sur l’expression des besoins
+a
+
+DIA 3
+Projet révisé : Portail documentaire du CIÉCO
+
+Privilégier un modèle basé sur des outils très liés aux pratiques quotidiennent des chercheuses et l’utilisation d’APIs.
+Sorte de tableau de bord qui permet d’agréger des contenus de différents endroits et de créer les entités dont nous avons besoin en lien avec ce contenu.
+Système modulaire qui permet la création de nouveaux formulaires en fonction des besoins.
+- modèle no-code (facile d’accès)
+- flexibilité (adaptable en fonction de l’évolution des besoins)
+- visualisation (vues d'ensemble)
+
+
+titre: 
+- common (sonne anglais)
+- portail
+- plateforme
+- 
+
+Aproche 
+
+
+Production d’un dashboard qui inteargi avec les 
+
+Zotero pour stocker la biblio
+Possibilité abonnement Lab
+
+### Avantages de la nouvelle stratégie
+
+Un environnement de travail 
+- unifié (mêmes techno : front-end site CIÉCO / Commons / Expots, etc.) 
+- modulaire et extensible (capitalisation possible sur les composants : ex. gestion de l’identification)
+
+Un écosystème basé sur l’utilisation d’API
+- importations automatisée de données externes (données muséales, feuilles de calcul, etc.)
+- délégation de certaines fonctionnalités à des services tiers (Zotero pour la gestion de références bibliographiques)
+- remplacement possible des composants
+
+plus grande fluidité dans les étapes de travail
+
+Stack:
+- JavaScript + CSS
+- Svelte + Svelte kit
+- Base de données (en ?) <!-- à voir-->
+    - XML+Xquery+RestXQ / BaseX
+    - [deno](https://doc.deno.land/deno/stable)
+    - [couchDB](https://docs.couchdb.org/en/stable/api/index.html)
+
+@lenamk: 
+- présentation 3 mai
+- décrire les fonctionnalités (énoncé des besoins) : 3xdemi-journées
+- spécifier les techs auxquelles il faut répondre
+
+
+Tests implémentations - quelle marge de négociation avec le(s) dev(s)
+1. BaseX
+2. CouchDB and its standard API
+3. CouchDB+GraphQL
+4. Deno + couchDB? 
+
+
+
+
+
+### Structure
+
+#### Services tiers
+
+- Zotero
+    - métadonnées sur les documents
+    - PDF à partir des archives
+    - biblio
+- thesauri?
+- cantaloupe
+    - dépôt
+    - stockage
+    - service des images en IIIF
+- [HSS common]
+
+#### common: tableau de bord (application)
+
+modules:
+
+- users
+    - authentification
+
+
+Fiches:
+- things
+    - œuvre
+    - lieux
+- actors
+    - personnes
+    - groupes/institutions
+- events
+    - expo
+    - acquisitions
+
+#### Composants
+
+- base de données (contient des fichiers json ou xml)
+    - langage de manipulation de données: n'existe pas en json (excepté jsonIQ), xml ou graphql permettent ça
+
+
+### Fonctionnalités
+
+#### Zotero
+Afficher les ressources stockées dans Zotero (définir la liste ciblée)
+- livres
+- rapports
+- thèses
+- articles de revue
+- articles de conférences
+- documents (archives)
+- photos
+- presse
+- page web
+- video
+
+#### Images
+Saisir et modifier des images (+leurs métadonnées)
+
+Afficher les images stockées dans Cantaloupe
+
+
+#### Tableau de bord
+
+Composants
+
+### Time spirale
+
+Implémentation et mise en œuvre
+
+- 3 mai 2022, rencontre
+    - validation du plan 
+    - mise en place du Zotero après la rencontre ($)
+- 20 mai 2022, forum étudiant CIÉCO
+    - introduction de common et annonce des ateliers Zotero
+- 20 juin 2022, cahier des charges
+    - modules
+        - API Zotero
+        - données type événements
+- été 2022, recherche de prestataire + ateliers Zotero
+- septembre --> décembre livraisons
+- septembre --> octobre, réunions utilisateurs
+
+Take away
+
+- Validation des orientations
+- Abonnement Zotero + ateliers les groupes de chercheur.se.s
+- validation du calendrier
+
+---
+
 ## Check list pour la rencontre du 26 avril 
 
 - [ ] choisir si on crée un [compte institutionnel](https://www.zotero.org/storage/institutions) pour le labo/Partenariat (pour le moment)
@@ -15,10 +195,6 @@ since: 2021-11-30
 [Penpot board](https://design.penpot.app/#/workspace/4b3d2990-86a8-11ec-a81e-9eafb5cb1e0f/47380880-c1a2-11ec-bc13-c5ff4adc2ae3?page-id=47380881-c1a2-11ec-bc13-c5ff4adc2ae3)
 
 Choix d'interlocuteurs
-
-
-
-
 
 
 
