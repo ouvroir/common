@@ -14,13 +14,48 @@ L’Ouvroir bénéficie du soutien de l’[Université de Montréal](https://www
 
 ### *Common*
 
-*Common* a pour but de rassembler, documenter et diffuser la recherche produite par les membres du CIÉCO. 
+*Common* est une infrastructure umérique pour la recherche. En tant que portail documentaire, *Common* a pour rôle de rassembler, documenter et diffuser la recherche produite par les membres du CIÉCO. 
 
 
 
 
 
 ### État de la situation
+
+#### Qu’est-ce que la recherche en histoire de l’art et en muséologie aujourd’hui? 
+
+La recherche menée par le Partenariat 
+
+4 axes : chaque axe = équipe étudiante qui se renouvelle aux quelques années (~20 personnes par année)
+
+- axe 1 : la collection exposée - Marie Fraser. Histoire des expositions de collections
+  - archives des musées (expositions) → documents de montage d'exposition (texte, photographies → vues d'exposition)
+  - listes (données semi-structurées) d'exposition
+- axe 2 : la collectin engagée - Johanne Lamoureux. Musées et implication citoyenne
+  - initiatives qui impliquent le public au sein des musées
+  - recherche des traces / "archives" mais il y en a peu, sous forme très disparate (boîte avec objets hétéroclites type post-it)
+- axe 3 : la collection élargie - Mélanie Boucher. Nouvelles formes d'œuvres dans les collection (art contemporain - performatif)
+  - archives des musées (acquisition, conservation d'œuvres de la performance)
+  - numérique  → 3D AR/VR 
+- axe 4 : la collection partagée - Emmanuel Château-Dutier. le partage et ouverture des collections
+  - bibliographie des initiatives 3D dans les musées (documentation de projets numériques)
+  - essayer et documenter les usages d'expositions numériques partagées (AR/VR)
+
+Co-chercheur·se·s (~20) qui viennent compléter les recherches dans les quatres axes principaux
+
+Maximum une 50aine de personnnes qui travaillent "en même temps" (la même année scolaire), mais sur 7 ans, il va y avoir du renouvellement et des changements au sein des équipes
+
+L'objectif → conserver les recherches effectuées de façon centralisée, pour que la recherche effectuée l'an 1 par l'étudiante x soit accessible 5 ans plus tard par Prof Y.
+
+
+
+#### Ce qu'on veut conserver
+
+Les chercheur·se·s effectuent des recherches dans les archives des musées. On ne veut pas numériser l'ensemble des archives du musée mais on peut souhaiter conserver des reproductions (numérisations) des documents et extraire des métadonnées pour le renseigner. 
+
+espace de travail interne: pour les personnes qui travaillent dans le partenariat
+
+
 
 
 
@@ -71,6 +106,112 @@ Adresser les réponses au Laboratoire Ouvroir: ouvroir@umontreal.ca
 ### Architecture - briques      
 
 architecture de base / template d'interactions / briques
+
+
+
+#### Créer un module d'authentification
+
+- authentifier les chercheur·se·s qui se connectent à la plateforme
+- enregistrer leurs activités de façon horodatée (voir: versionner les contenus)
+
+#### Donner des droits d'accès différenciés
+
+- donner des accès à des nouveaux chercheurs
+- par défaut, tout est ouvert, mais on peut limiter l'accès à des contenus <!-- comment ? par individu, par "dossier" -->
+
+Les droits sont les suivants :
+
+- visibilité ?
+- lecture
+- lecture et écriture
+
+#### Personnaliser (modifier) l'interface 
+
+- choisir les contenus sur la page d'accueil 
+- choisir les contenus dans le tableau de bord
+- thème (clair / sombre)
+- taille de la typo
+
+#### Mapper des fonctionnalités à des raccourcis claviers
+
+<!-- à détailler-->
+
+
+
+#### Conserver l'historique de création et modification des contenus
+
+qui a créé, importé ou modifié un contenu ou ses métadonnées
+
+
+
+
+
+#### Importer et consulter des contenus externes (API)
+
+Zotero
+
+- compte Zotero instutionnel (espace stockage illimité)
+- qu'est-ce qu'il arrive si les gens suppriment dans zotero? 
+- 
+
+API Google Sheets
+
+#### Moteur de recherche
+
+moteur de recherche plein texte sur les métadonnées
+
+- recherche par type contenu (seulement les expositions | les images | les documents): priorité haute
+- recherche au sein de l'ensemble des contenus (expositions, bibliographie, images): priorité basse
+
+#### Serveur d'images
+
+- Cantaloupe
+- téléverser, ajouter des métadonnées, consuler
+- autoriser la diffusion (à l'interne par défaut oui, à l'externe par défaut non)
+
+
+
+#### Base de données interne (entités)
+
+##### Structurer des données
+
+- CIDOC-CRM + thesauri de vocabulaires structurés
+
+##### Ajouter de données
+
+- expositions, œuvres (acquisitions Mélanie)
+- identifiants uniques
+
+##### Consulter des données
+
+- chaque donnée a un identifiant unique (URI)
+
+##### Modifier les données
+
+- modifier les métadonnées
+- modifier les droits d'accès (interne)/ droits de diffusion(externe)
+
+##### Supprimer des données
+
+- conserver ce qui est supprimé? 
+
+
+
+
+
+
+
+#### Tableau de bord
+
+- vue d'ensemble des données de recherche
+
+
+
+#### Sécurité
+
+
+
+#### Backups
 
 
 

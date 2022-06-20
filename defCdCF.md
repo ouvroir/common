@@ -20,8 +20,6 @@ Le cahier des charges fonctionnel peut également revêtir un caractère contrac
 
 [source](https://www.valueanalysis.ca/fps.php?lang=fr)
 
-
-
 - Construire un diagramme FAST pour le projet, le processus ou le service à l’étude;
 - Caractériser chaque fonction pertinente en déterminant et en définissant les besoins et les contraintes applicables, comme suit :
   - **Besoins :** pour chaque fonction, déterminer les besoins spécifiques qui doivent être comblés afin que cette fonction soit satisfaite.
