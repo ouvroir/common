@@ -5,6 +5,37 @@ since: 2021-11-30
 ---
 # Journal *common*
 
+## Rencontre avec Anne-Sophie Miclo
+
+22 juin 2022
+
+En rédaction de thèse (et sur le comité de la recherche CIÉCO)
+
+- façon dont le vivant change les pratiques muséales (animal, végétal)
+- 9 chapitres, 3 grosses parties
+- normalement pas trop de répétitions dans les œuvres entre les chapitres
+
+beaucoup d'images 
+- organisation par chapitre? 
+- œuvres: évolution à travers le temps, plusieurs images
+- vérifier infos manquantes
+
+solution pour mettre: image, source, crédits
+
+Marilie fait un excel pour mettre ses infos
+
+corpus > par nom d'artiste > captures d'écran / images si téléchargement semble nécessaire 
+
+
+Zotero
+Tropy
+Endnote
+
+
+Thèses et mémoires: pas forcément liés pour la documentation/archivage CIÉCO
+
+
+
 ## Préparation de la présentation du 3 mai
 
 [canva](https://www.canva.com/design/DAE-6yOGl-s/EUqTWwLv21I_xquY2aBssA/edit?utm_content=DAE-6yOGl-s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
