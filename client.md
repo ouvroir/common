@@ -6,64 +6,69 @@ Juin 2020
 
 ### Contexte du laboratoire et du partenariat CIÉCO
 
-L’**Ouvroir** d’histoire de l’art et de muséologie numériques de l’Université de Montréal, est un laboratoire de recherche destiné à soutenir le travail conduit dans le cadre du Partenariat « Des nouveaux usages des collections dans les musées d’art » ([CIÉCO](http://www.cieco.co)). Ce laboratoire fournit à l’ensemble de l’équipe un équipement de pointe pour mener la recherche mais aussi pour expérimenter et développer de nouveaux usages des collections numérisées qui utilisent le web, les techniques de visualisation 3D et la réalité virtuelle et augmentée. Il donne l’occasion de créer une infrastructure éditoriale solide pour l’Encyclopédie numérique et de produire trois développements informatiques qui seront mobilisés dans les différents axes de la recherche : d’abord avec la mise en place d’une plateforme collaborative de travail pour le travail sur les archives ; ensuite avec la création d’un outil numérique consacré à la documentation des accrochages de collections ; enfin, avec la création d’une librairie JavaScript destinée à faciliter la production et le déploiement de dispositifs d’expositions numériques et de l’illustration de l’Encyclopédie. C’est aussi une structure polyvalente qui permet de faciliter le travail collaboratif et l’organisation de téléréunions avec les partenaires muséaux et internationaux du projet. Sa création permet de doter le Canada d’un équipement de recherche dédié à l’expérimentation et le développement d’innovations dans le domaine de l’histoire de l’art et de la muséologie numérique.
-
-<!-- piger dans la newsletter pour ajouter du contenu --->
-
-L’Ouvroir bénéficie du soutien de l’[Université de Montréal](https://www.umontreal.ca/), du [Fonds Canadien pour l’Innovation](https://www.innovation.ca/) et de la [province du Québec](https://www.economie.gouv.qc.ca/bibliotheques/programmes/aide-financiere/programme-de-soutien-aux-organismes-de-recherche-et-dinnovation-pso/cofinancement-du-gouvernement-du-quebec-aux-programmes-de-la-fondation-canadienne-pour-linnovation-fci/fonds-dinnovation/).
+L’**Ouvroir** d’histoire de l’art et de muséologie numériques de l’Université de Montréal, est un laboratoire de recherche destiné à soutenir le travail conduit dans le cadre du Partenariat « Des nouveaux usages des collections dans les musées d’art » ([CIÉCO](http://www.cieco.co)). Ce laboratoire fournit à l’ensemble de l’équipe un équipement de pointe pour mener la recherche mais aussi pour expérimenter et développer de nouveaux usages des collections numérisées qui utilisent le web, les techniques de visualisation 3D et la réalité virtuelle et augmentée. Il donne l’occasion de créer une infrastructure éditoriale solide pour l’Encyclopédie numérique et de produire trois développements informatiques qui seront mobilisés dans les différents axes de la recherche : d’abord avec la mise en place d’une plateforme collaborative de travail pour le travail sur les archives ; ensuite avec la création d’un outil numérique consacré à la documentation des accrochages de collections ; enfin, avec la création d’une librairie JavaScript destinée à faciliter la production et le déploiement de dispositifs d’expositions numériques et de l’illustration de l’Encyclopédie. C’est aussi une structure polyvalente qui permet de faciliter le travail collaboratif et l’organisation de téléréunions avec les partenaires muséaux et internationaux du projet. Sa création permet de doter le Canada d’un équipement de recherche dédié à l’expérimentation et le développement d’innovations dans le domaine de l’histoire de l’art et de la muséologie numérique. L’Ouvroir bénéficie du soutien de l’[Université de Montréal](https://www.umontreal.ca/), du [Fonds Canadien pour l’Innovation](https://www.innovation.ca/) et de la [province du Québec](https://www.economie.gouv.qc.ca/bibliotheques/programmes/aide-financiere/programme-de-soutien-aux-organismes-de-recherche-et-dinnovation-pso/cofinancement-du-gouvernement-du-quebec-aux-programmes-de-la-fondation-canadienne-pour-linnovation-fci/fonds-dinnovation/).
 
 ### *Common*
 
-*Common* est une infrastructure umérique pour la recherche. En tant que portail documentaire, *Common* a pour rôle de rassembler, documenter et diffuser la recherche produite par les membres du CIÉCO. 
-
-
-
-
-
-### État de la situation
+*Common* est une infrastructure numérique à concevoir pour soutenir la recherche en histoire de l’art et en muséologie. En tant que portail documentaire, *Common* a pour rôle de rassembler, structurer et diffuser la recherche produite par les membres du CIÉCO. 
 
 #### Qu’est-ce que la recherche en histoire de l’art et en muséologie aujourd’hui? 
 
-La recherche menée par le Partenariat 
+La recherche menée par le Partenariat est s’organise en 4 axes. La description des quatre axes nous semblent importante car ils seront repris pour présenter les cas d’usage particuliers auxquels l’outil devra répondre.
 
-4 axes : chaque axe = équipe étudiante qui se renouvelle aux quelques années (~20 personnes par année)
+> **Axe 1: «la collection exposée»** (dir. Marie Fraser) concerne l’histoire des expositions de collections. À partir des documents d’archives des musées partenaires (documents de montage d’exposition, textes, photographies de vues d’exposition), la recherche prend forme à deux échelles dans *common*. D’une part, il s’agit de documenter l’histoire des expositions en créant des entrées (sous la forme de données structurées) pour chaque exposition. Ces données offriront la possibilité d’avoir une vue d’ensemble ainsi que de produire une analyse quantitative. D’autre part, certaines expositions seront analysées en profondeur, ce qui requiert d’accumuler et de produire des métadonnées à propos de nombreux documents d‘archive qui concernent une même exposition. 
+>
+> **Axe 2: «la collection engagée»** (dir. Johanne Lamoureux) s’intéresse à l’implication citoyenne dans les musées, c’est-à-dire aux initiatives qui impliquent le public lors d’exposition ou d’événements. L’équipe recherche et souhaite documenter des archives, ou du moins des traces, de ces initiatives. Il y en a toutefois très peu (à date), sous forme très disparates dont des boîtes contenant des objets hétéroclites tels que des post-it.
+>
+> **Axe 3: «la collection élargie»** (dir. Mélanie Boucher)a pour sujet les nouvelles formes d’œuvres dans les collections, particulièrement en art contemporain performatif. La recherche dans les archives muséale se concentrera sur des œuvres particulières, dont les dossiers d’acquisition et de conservation seront étudiés de près. De plus, certains projets numériques (3D, AR, VR) feront parfois partie de la documentation de ces œuvres.
+>
+> **Axe 4 : «la collection partagée»** (Emmanuel Château-Dutier) explore le partage et l’ouverture des collections muséales. La documentation des projets numériques prend tout d’abord la forme d’une bibliographie commentée, mais se prolongera également en essais et documentation des formes et usages d’expositions numériques en AR ou VR notamment.
 
-- axe 1 : la collection exposée - Marie Fraser. Histoire des expositions de collections
-  - archives des musées (expositions) → documents de montage d'exposition (texte, photographies → vues d'exposition)
-  - listes (données semi-structurées) d'exposition
-- axe 2 : la collectin engagée - Johanne Lamoureux. Musées et implication citoyenne
-  - initiatives qui impliquent le public au sein des musées
-  - recherche des traces / "archives" mais il y en a peu, sous forme très disparate (boîte avec objets hétéroclites type post-it)
-- axe 3 : la collection élargie - Mélanie Boucher. Nouvelles formes d'œuvres dans les collection (art contemporain - performatif)
-  - archives des musées (acquisition, conservation d'œuvres de la performance)
-  - numérique  → 3D AR/VR 
-- axe 4 : la collection partagée - Emmanuel Château-Dutier. le partage et ouverture des collections
-  - bibliographie des initiatives 3D dans les musées (documentation de projets numériques)
-  - essayer et documenter les usages d'expositions numériques partagées (AR/VR)
+#### Organisation du travail
 
-Co-chercheur·se·s (~20) qui viennent compléter les recherches dans les quatres axes principaux
+Chaque axe est dirigé par un·e professeur·e, quelques co-chercheur·se·s et une équipe étudiante qui se renouvelle sur une base réguilère (estimation: ~20 personnes qui contribuent activement par année). 
 
-Maximum une 50aine de personnnes qui travaillent "en même temps" (la même année scolaire), mais sur 7 ans, il va y avoir du renouvellement et des changements au sein des équipes
+*Common* sert comme espace de travail interne, il ne doit être accessible que pour les personnes impliquées dans le partenariat
 
-L'objectif → conserver les recherches effectuées de façon centralisée, pour que la recherche effectuée l'an 1 par l'étudiante x soit accessible 5 ans plus tard par Prof Y.
+#### Analyse des besoins
 
+Suite à l’analyse des besoins effectuée à l’hiver 2022, nous avons relevés les points suivants pour ce cahier des charges: 
 
-
-#### Ce qu'on veut conserver
-
-Les chercheur·se·s effectuent des recherches dans les archives des musées. On ne veut pas numériser l'ensemble des archives du musée mais on peut souhaiter conserver des reproductions (numérisations) des documents et extraire des métadonnées pour le renseigner. 
-
-espace de travail interne: pour les personnes qui travaillent dans le partenariat
+- la recherche en cours, 
+- utilisation de Zotero
+- données dans des tableurs type googleSheets
 
 
-
-
-
-Analyse des besoins des chercheur·se·s: recherche en cours, utilisation de Zotero, données dans des tableurs type googleSheets
 
 
 
 ### Objectifs de la prestation
+
+Conserver les recherches effectuées de façon centralisée, pour que la recherche effectuée l’an 1 par l’étudiante x soit accessible 5 ans plus tard par Prof Y.
+
+
+
+#### Rassembler
+
+Les chercheur·se·s effectuent des recherches dans les archives des musées. On ne veut pas numériser l’ensemble des archives du musée mais on peut souhaiter conserver des reproductions (numérisations) des documents et extraire des métadonnées pour le renseigner. 
+
+
+
+#### Structurer
+
+Produire des métadonnées 
+
+
+
+#### Diffuser
+
+Produire des liens pérenne pour le matériel sélectionné qui sera cité et partagé dans des publications, notamment dans l’Encylopédie. 
+
+
+
+### 
+
+
 
 
 
@@ -75,7 +80,7 @@ Analyse des besoins des chercheur·se·s: recherche en cours, utilisation de Zot
 
 ### Parties concernées par le déroulement du projet et ses résultats
 
-#### Réponses à l’appel d'offres
+#### Réponses à l’appel d’offres
 
 Adresser les réponses au Laboratoire Ouvroir: ouvroir@umontreal.ca
 
@@ -105,19 +110,19 @@ Adresser les réponses au Laboratoire Ouvroir: ouvroir@umontreal.ca
 
 ### Architecture - briques      
 
-architecture de base / template d'interactions / briques
+architecture de base / template d’interactions / briques
 
 
 
-#### Créer un module d'authentification
+#### Créer un module d’authentification
 
 - authentifier les chercheur·se·s qui se connectent à la plateforme
 - enregistrer leurs activités de façon horodatée (voir: versionner les contenus)
 
-#### Donner des droits d'accès différenciés
+#### Donner des droits d’accès différenciés
 
 - donner des accès à des nouveaux chercheurs
-- par défaut, tout est ouvert, mais on peut limiter l'accès à des contenus <!-- comment ? par individu, par "dossier" -->
+- par défaut, tout est ouvert, mais on peut limiter l’accès à des contenus <!-- comment ? par individu, par "dossier" -->
 
 Les droits sont les suivants :
 
@@ -125,9 +130,9 @@ Les droits sont les suivants :
 - lecture
 - lecture et écriture
 
-#### Personnaliser (modifier) l'interface 
+#### Personnaliser (modifier) l’interface 
 
-- choisir les contenus sur la page d'accueil 
+- choisir les contenus sur la page d’accueil 
 - choisir les contenus dans le tableau de bord
 - thème (clair / sombre)
 - taille de la typo
@@ -138,7 +143,7 @@ Les droits sont les suivants :
 
 
 
-#### Conserver l'historique de création et modification des contenus
+#### Conserver l’historique de création et modification des contenus
 
 qui a créé, importé ou modifié un contenu ou ses métadonnées
 
@@ -151,7 +156,7 @@ qui a créé, importé ou modifié un contenu ou ses métadonnées
 Zotero
 
 - compte Zotero instutionnel (espace stockage illimité)
-- qu'est-ce qu'il arrive si les gens suppriment dans zotero? 
+- qu’est-ce qu’il arrive si les gens suppriment dans zotero? 
 - 
 
 API Google Sheets
@@ -161,13 +166,13 @@ API Google Sheets
 moteur de recherche plein texte sur les métadonnées
 
 - recherche par type contenu (seulement les expositions | les images | les documents): priorité haute
-- recherche au sein de l'ensemble des contenus (expositions, bibliographie, images): priorité basse
+- recherche au sein de l’ensemble des contenus (expositions, bibliographie, images): priorité basse
 
-#### Serveur d'images
+#### Serveur d’images
 
 - Cantaloupe
 - téléverser, ajouter des métadonnées, consuler
-- autoriser la diffusion (à l'interne par défaut oui, à l'externe par défaut non)
+- autoriser la diffusion (à l’interne par défaut oui, à l’externe par défaut non)
 
 
 
@@ -189,7 +194,7 @@ moteur de recherche plein texte sur les métadonnées
 ##### Modifier les données
 
 - modifier les métadonnées
-- modifier les droits d'accès (interne)/ droits de diffusion(externe)
+- modifier les droits d’accès (interne)/ droits de diffusion(externe)
 
 ##### Supprimer des données
 
@@ -203,7 +208,7 @@ moteur de recherche plein texte sur les métadonnées
 
 #### Tableau de bord
 
-- vue d'ensemble des données de recherche
+- vue d’ensemble des données de recherche
 
 
 
@@ -231,7 +236,7 @@ qui permettront d’adapter le périmètre de la prestation.
 
 ### Délais
 
-Une livraison est souhaitée d'ici décembre 2022.
+Une livraison est souhaitée d’ici décembre 2022.
 
 ### Conditions de livraison
 
