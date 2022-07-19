@@ -5,6 +5,191 @@ since: 2021-11-30
 ---
 # Journal *common*
 
+## CIDOC
+
+### Détails de CIDOC
+
+Événement E5 → activité E7 → acquisition E8
+
+Événement E5 → activité E7 → Création E65 → E83 Type Création ? 
+
+
+![schéma général](https://cidoc-crm.org/sites/default/files/CIDOC-501.PNG)
+
+[doc complète](https://cidoc-crm.org/sites/default/files/cidoc_crm_version_7.2.pdf)
+
+![acquisition](https://cidoc-crm.org/sites/default/files/acquisition.jpg)
+
+![time span](https://cidoc-crm.org/sites/default/files/time_span.jpg)
+
+
+Pseudo code pour une exposition:
+
+Fichier A.jsonld // Documenta14
+expo hasId "Documenta14"
+    expo isTypeOf E-Event 
+    expo hasPeriod p
+    expo hasLabel 'Documenta14'
+    
+p hasId "documenta14-period"
+  hasBeginDate 2017-05-01
+  hasEndDate   2017-09-01
+
+// mentionner les événements fils ?
+
+Fichier B.jsonld
+part isTypeOf E-Event 
+    part isPartOf aa-bb
+    expo hasPeriod p
+    
+p isPartOf "documenta14-period"
+  hasBeginDate 2017-05-01
+  hasEndDate   2017-08-01
+
+part hasArtworks [
+    'art-id01'
+    'art-id02',
+    'art-id03'
+]
+
+Fichier C.jsonld
+part isTypeOf E-Event 
+    part isPartOf aa-bb
+    expo hasPeriod p
+    
+p isPartOf "documenta14-period"
+  hasBeginDate 2017-08-01
+  hasEndDate   2017-09-01
+
+part hasArtworks [
+    'art-id01'
+    'art-id04',
+    'art-id05'
+]
+
+
+
+
+
+### Exposition
+
+décrire une exposition
+
+grande échelle (histoire des expositions de collection)
+
+Actuellement: données tabulaires 
+- Titre de l'exposition (fr)
+- Titre de l'exposition (en)
+- Sous-titre de l'exposition
+- Date de début
+- Date de fin
+- Salles
+- Lieux
+- Catégorie
+- Titre série
+- Typologie
+- Tag
+- Commissaires
+- Observations
+
+
+Quelles possibilités d'avoir un événement dans un événement? 
+*forms part of*
+récursivité
+
+
+Table de mapping vers CIDOC
+{
+    'titre': 'label'
+}
+
+
+
+variablilité: changements dans une exposition
+→ FRBROO manifestation contient des items particuliers
+- s'applique particulièrement bien pour les expositions itinérantes
+
+
+Acquisition
+
+
+Initiative 
+    - citoyenne
+    - numérique
+
+
+### Format
+
+
+Objectifs en sortie: quel est le format qu'on veut avoir en sortie? 
+- pouvoir exprimer les concepts en CIDOC CRM
+- comprendre comment lier les entités
+
+tester si l'alignement d'ontologie peut se faire
+- quand se fait-il et par qui?
+
+
+Format en interne?
+base de données interne: structure définie par les cas d'utiliations 
+- doit être structurée de manière efficace 
+```xml
+<db>
+    <exposition xml:id='expo-001'>
+        <dateDeb></dateDeb>
+        <dateDeb></dateDeb>
+        <title fr="documenta14" en="documenta" />
+        <subtitle/>
+        <titreSerie/>
+        <location/> //id d'un musée?
+        <category/>
+        <actors>
+            <pers>
+                <name/> //id ?
+                <role/>
+            </pers>
+        </actors>
+    </exposition>
+</db>
+```
+
+wikiData? beaucoup d'utilisation en DH
+
+gestion admin: 
+- module pour 'ajouter des colonnes / propriétés'
+- contrôle de type
+
+interface: 
+- vue en données tabulaires
+- entrée de données en formulaire contrôlé/validé
+
+
+penser aux fonctionnalités analytiques/visualisation en sortie → source de motivation pour entrer les données correctement
+- chronologies → quels paramètres sur y
+
+validation
+- vérifier ";()[]" ...
+
+
+TODO: schéma bd complète
+- entités
+    - voc / thesauri
+- utilisateurs
+    - droits
+    - actions
+
+TODO: lister les opérations qui impliquent la manipulation de données
+TODO: figma ou autre débuts d'interface
+
+
+- outil de dépôt/importation et stockage+consultation de données tabulaire
+- droits sur l'interface selon les rôles
+- avoir une API pour récupérer les données
+- prototypes développés autour des données doivent être intégrés à l'interface
+
+
+
+
+
 ## Rencontre avec Anne-Sophie Miclo
 
 22 juin 2022
