@@ -161,6 +161,8 @@ Zotero
 
 API Google Sheets
 
+Cantaloupe
+
 #### Moteur de recherche
 
 moteur de recherche plein texte sur les métadonnées
