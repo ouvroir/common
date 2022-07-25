@@ -5,7 +5,42 @@ since: 2021-11-30
 ---
 # Journal *common*
 
-## CIDOC
+### 20 juillet 2022
+
+importation générale vs API gSheets
+- importer csv
+    - contraintes au besoin pour limiter les coûts 
+    - est-ce que l'importation des données muséales doit être comprise dans common ou est-ce que ce ne serait pas logique de les traiter nous-mêmes
+- avantage gDrive: 
+    - travail collaboratif sur le tableur
+- priorité basse: utilisation API google drive
+    - problématique pour alignement des données
+    à terme, on s'entend pour éviter le travail avec googleDrive
+
+quantité de modifs *admin-ouvroir* faisables?
+- plus on reste sur ce qu'on connaît, plus ça peut tenir (svelte, baseX)
+- garder le modèle de données en interne, externaliser seulement le client (modèle à partir de ce qu'Emmanuel fait avec Jocelyn)
+
+vocabulaire:
+- gestion interne: choix de termes prédéfinis → séance de travail sur la terminologie (fait partie de la recherche)
+    - interface pour gérer les termes du système (sont associés à des uri)
+- gestion externe Getty API
+
+tags suffisants pour la catégorisation/typologie?
+- tags: mot-clefs liste ouverte
+- catégories: catégories disjointes = typage? liste fermée
+
+penser les entités en fiche, comme Notion
+
+
+
+voc Ministère culture FR ou getty
+
+modélisation orientée événement
+
+
+
+## CIDOC - 13 juillet 2022
 
 ### Détails de CIDOC
 
