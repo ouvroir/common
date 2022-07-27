@@ -5,7 +5,122 @@ since: 2021-11-30
 ---
 # Journal *common*
 
-### 20 juillet 2022
+Questions restantes du 26 juillet:
+
+- Où est-ce qu'on stocke les informations? 
+- Vocabulaires contrôlés
+- Versionnement des contenus (versionnement pour une éventuelle version logicielle asynchrone)
+  - qui a fait la modif
+  - est-ce qu'on stocke la modif
+
+
+
+## 26 juillet 2022
+
+[Document de cahier des charges](https://docs.google.com/document/d/1IgEi3qbTcAm0UB5-GZP9LabZbvY_F4pS84NOHS6Cmvs/edit)
+
+- Présentation du projet
+- Analyse des besoins (provisoire)
+- Explication du fonctionnement actuel
+- Authentification et gestion des droits
+
+### Quels contenus laisser dans Zotero
+
+- Références bibliographiques (gain pour la saisie normalisée des données)
+- Documents d’archives scannés (gain pour le stockage et le partage de fichiers)
+
+Zotero doit-il gérer les œuvres ? car Zotero n’est pas très bon pour gérer les œuvres. Les musées sont mieux placés pour les décrire mais celles-ci ne sont pas nécessairement disponibles. Comme on peut avoir besoin de décrire sommairement des œuvres, il pourrait être nécessaire de créer des œuvres.
+
+hésitation: catégorie 'œuvre'
+
+manques: 
+- événements
+- œuvres: ne correspond pas aux exigences des historien·ne·s de l'art (mais litigieux)
+- personnes
+- lieux 
+
+Zotero = contenus description structurée
+Common = Hiérarchisation, entités, expression explicite des relations 
+
+Dans Zotéro les contenus sont structurés à plat, il est seulement possible de structurer les contenus en collections ou avec des tags. L’application permet de créer du lien entre les ressources, de donner de la profondeur aux données.
+
+Dans Zotero on a la documentation, les sources, les entités historiques sont gérées dans l’application.
+
+On référence les sources et la documentation par un lien à l’ItemKey de Zotero. Il est possible de chercher par itemKey même si on ne peut pas afficher les itemKeys dans l'interface du logiciel.
+
+### Organisation de contenus
+
+Les utilisateur·rice·s de Zotero développent des stratégies palliatives pour compenser l'absence d’expression explicite des relations. Par exemple, pour regrouper des documents par exposition, etc.
+
+En gardant Zotero au centre du dispositif, prévoir une fonctionnalité qui permette de récupérer les données de collections pour les transformer en entités.
+
+Sinon, a minima, se poser la question du statut des collections et des tags dans l’application.
+
+### Valider les principes de gestion des droits
+
+La gestion des droits est gouvernée par l’organisation des groupes bibliographiques.
+
+@todo Vérifier s’il est possible d’utiliser l’authentification de l’API Zotero & à tester
+
+rôle:
+- superadmin: ouvroir (adminsitre toutes les ressources)
+- admin - réviseur: validation des ressources (révision des ressources d'un groupe)
+- éditeur
+- lecteur
+
+création d'un groupe: vient du prof ou d’un autre éditeur
+
+profs = droit de révision des contenus
+- voir les dernières choses modifiées
+- réviser/valider
+
+
+
+### Quel périmètre pour IIIF
+
+le prestataire ne devrait pas faire le serveur IIIF (c'est du java)
+
+comment planifier l'interaction avec un serveur IIIF
+- quel est le niveau de description de l'API (@todo: trouver si la procédure cantaloupe est suffisamment bien détaillée?)
+- quel est le niveau de description des images qu'on veut prendre en charge? les métadonnées de IIIF sont pauvres
+    - moyen pour les exposer? OAI PMH
+    - dans manifeste: forme clé-valeur
+- métadonnées dans Common, liées à l'identifiant IIIF du serveur
+
+
+Nous n’avons pas besoin d’éditer des manifestes.
+
+Il faut pouvoir disposer d’un serveur de test accessible pour le développeur. 
+
+@william tester cantaloupe local et explorer la question des métadonnées
+@todo trouver comment ajouter un lien vers les métadonnées de l'image lors de l’ajout d’une ressource dans un serveur IIIF? 
++ formats d'image, 
++ renommer l'image ? 
++ différents paramètres de traitement ? (images pyramidales jpeg2000)
++ dépôt d'images en batch ?
++ utilisation du filesystem ?
+
+
+### Modèle de données 
+[doc en ligne](https://drive.google.com/file/d/1wntLQvmaamfx36SWtpc0MMRo39Q2dlNz/view)
+
+https://www.culture.gouv.fr/Media/Documentation/Harmonisation-des-donnees-culturelles/Files/MCC-HADOC-REF-modele_harmonise_donnees_culturelles.pdf
+
+Pas besoin de stocker les métadonnées bibliographiques déjà stockées sur Zotero
+
+Ajouter une table image avec description à deux niveaux.
+
+
+À tester :
+- temps pour requeter une collection Zotero, documents
+
+geonames 
+
+
+
+
+
+## 20 juillet 2022
 
 importation générale vs API gSheets
 - importer csv
