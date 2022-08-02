@@ -15,6 +15,28 @@ Questions restantes du 26 juillet:
 
 
 
+## 1er août 2022
+
+Mécanisme du dépôt de fichier :
+
+- a-t-on vraiment besoin d'inscrire l'uri des métadonnées stockées dans la base de common à l'intérieur de l'image (metadonnées xmp) ?
+- comment accéder à distance au fs de cantaloupe ? (ssh ?)
+
+
+
+
+Lena (avec emmanuel, ou rencontre mais est-ce réaliste?)
+- relire ER et voir si j'ai des idées pour ajouter des propriétés
+- penser à comment on gère l'ajout de propriétés : quelle stratégie d'accompagnement
+    - ajout de propriété (est-ce qu'on le permet, quand serait-ce nécessaire?)
+    - utiliser les tags
+    - quelles métadonnées standard? 
+
+Lena
+
+- interface
+- william ajoute les éléments d'interface dans CRUD en laissant des liens vers les sections
+
 ## 26 juillet 2022
 
 [Document de cahier des charges](https://docs.google.com/document/d/1IgEi3qbTcAm0UB5-GZP9LabZbvY_F4pS84NOHS6Cmvs/edit)
