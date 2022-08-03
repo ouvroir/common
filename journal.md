@@ -7,7 +7,6 @@ since: 2021-11-30
 
 Questions restantes du 26 juillet:
 
-- Où est-ce qu'on stocke les informations? 
 - Vocabulaires contrôlés
 - Versionnement des contenus (versionnement pour une éventuelle version logicielle asynchrone)
   - qui a fait la modif
@@ -15,27 +14,68 @@ Questions restantes du 26 juillet:
 
 
 
-## 1er août 2022
+## 3 août 2022
 
-Mécanisme du dépôt de fichier :
+Paul Morel: developpeur et designer d'interface
+
+### Mécanisme du dépôt de fichier / où stocker l'information?
 
 - a-t-on vraiment besoin d'inscrire l'uri des métadonnées stockées dans la base de common à l'intérieur de l'image (metadonnées xmp) ?
 - comment accéder à distance au fs de cantaloupe ? (ssh ?)
 
+Où est-ce qu'on stocke les informations? 
+
+métadonnées des images / info.json
+
+- exemple de [manifeste Gallica](https://gallica.bnf.fr/iiif/ark:/12148/btv1b53083503z/manifest.json)
+- exemple [bac à sable](https://oncs.bib.umontreal.ca/cantaloupe/iiif/3/ouvroir%2Frighettino%2Fpng%2F1_Turin_PentagonalFortress.png/info.json)
+
+Cantaloupe requiert un générateur de manifeste
+
+-> ajouter un `seeAlso` au info.json avec les infos oai ou de notre api
+
+-> voir les autres informations nécessaires pour faire ça proprement cf. [doc IIIF #58](https://iiif.io/api/image/3.0/#58-linking-properties)
+-> prendre en compte la possibilité d’utiliser `partof` car nous aurons probablement des collections
+-> spécifier le fonctionnement du serveur d’images pour le traitement des documents multipages (gestion des identifiants uniques) 
+
+Processus imaginé
+- connexion au client
+- verser l'image
+- envoi du fichier au serveur
+- récupère le id du serveur
+
+serveur de fichiers 
+- vérifier que l'id est unique
+- éventuellement un ark
+- doit gérer les documents multiparties
+
+
+Pas de dépendances pour générer un manifest.json
 
 
 
-Lena (avec emmanuel, ou rencontre mais est-ce réaliste?)
-- relire ER et voir si j'ai des idées pour ajouter des propriétés
+[meta-identifiers](https://cantaloupe-project.github.io/manual/5.0/images.html#MetaIdentifiers)
+
+pdf d'archive
+
+Document ID : 10.34847/nkl.b5d9ehd5
+Image 1 : https://api.nakala.fr/data/10.34847/nkl.b5d9ehd5/90ba0b4b6f911361977f5f3638a27490090e9152
+Image 1 : https://api.nakala.fr/data/10.34847/nkl.b5d9ehd5/fe5d66d58205da01bfde43223f3b5f245b2f66e6
+
+
+
+### Diagramme ER
+
+relire ER et voir si on a des idées pour ajouter des propriétés
+
 - penser à comment on gère l'ajout de propriétés : quelle stratégie d'accompagnement
     - ajout de propriété (est-ce qu'on le permet, quand serait-ce nécessaire?)
     - utiliser les tags
     - quelles métadonnées standard? 
 
-Lena
+Lena: interface
 
-- interface
-- william ajoute les éléments d'interface dans CRUD en laissant des liens vers les sections
+william ajoute les éléments d'interface dans CRUD en laissant des liens vers les sections
 
 ## 26 juillet 2022
 
