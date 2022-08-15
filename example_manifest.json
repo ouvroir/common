@@ -1,0 +1,50 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://common.org/image/vue-exposition-documenta14/manifest.json", // URI du manifest.json
+    "type": "Manifest",
+    "label": {
+        "fr": [
+            "Titre de l'image"
+        ]
+    },
+    "seeAlso": [
+        {
+            "id": "https://common.org/image/vue-exposition-documenta14.xml", // URI vers les métadonnées RDF/XML (Common ou OAI-PMH)
+            "type": "Dataset",
+            "label": {
+                "en": [
+                    "Bibliographic Description in XML"
+                ]
+            },
+            "format": "text/xml",
+            "profile": "http://purl.org/dc/elements/1.1/"
+        }
+    ],
+    "metadata": [ // contient les métadonnées dublin core
+        {
+            "label": {
+                "en": [
+                    "dc:creator"
+                ]
+            },
+            "value": {
+                "fr": [
+                    "Camille Henrot"
+                ]
+            }
+        },
+        {
+            ...,
+        }
+    ],
+    "rights": "http://creativecommons.org/licenses/by/4.0/", // à modifier 
+    "items": [
+        {
+            "id": "https://iiif.io/api/cookbook/recipe/0001-mvm-image/canvas/p1", // URI de l'image servie par Cantaloupe
+            "type": "Canvas",
+            "height": 1800, // à modifier en fonction
+            "width": 1200 // à modifier en fonction
+        },
+        // Dans le cas d'une image multi-page, un item par page
+    ]
+}
