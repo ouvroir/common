@@ -5,7 +5,19 @@ since: 2021-11-30
 ---
 # Journal *common*
 
-Questions restantes du 26 juillet:
+## 24 novembre 2022
+
+publication des données 
+- sur le site cieco? 
+- environnement de consultation (common) mais version non éditable
+
+- champs pour indiquer définir et gérer les métadonnées
+
+signalement: la description des ressources ne devrait jamais être protégé
+
+
+
+## Questions restantes du 26 juillet:
 
 - Vocabulaires contrôlés
 - Versionnement des contenus (versionnement pour une éventuelle version logicielle asynchrone)
