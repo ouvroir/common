@@ -5,6 +5,21 @@ since: 2021-11-30
 ---
 # Journal *common*
 
+## 12 décembre 2022
+
+Reprendre travail dans le cahier des charges (p13)  
+
+- images: ajouter liens entre Image et les autres entités (1 to many)
+- interface de validation & validation en batch (tableau)
+
+décrire les opérations et sortir les questions d'interface dans la section interface
+
+affichage/interface
+- affichage de chaque entité par entité tabulaire ou par liste (développer les listes par notice)
+- vue tabulaire: voir(choisir) les colonnes qu'on affiche
+
+
+
 ## 24 novembre 2022
 
 publication des données 
