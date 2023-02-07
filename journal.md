@@ -5,6 +5,42 @@ since: 2021-11-30
 ---
 # Journal *common*
 
+## 
+
+## 6 février 2023
+
+- tableau de bord
+- workspace vs équipe
+- unification du vocabulaire
+
+
+1 seule interface: 
+- avoir un tableau générique qui permet de travailler dans les données et pas multiplier et les interfaces
+- requiert un lieu pour administrer les comptes
+- est-ce qu'une même vue permet de gérer le siloter les données? 
+
+
+test use case:
+> chaque personne voit "tout" ce à quoi elle a accès
+> utilise ou crée des entités à partir de ce qu'elle voit
+> définir que les entités sont accessibles à tou·te·s, mais pas les liens entre les ressources? 
+> permet de montrer les sources bibliographiques, les expositions
+
+Seule la personne qui a créé l'entité peut la modifier. Si besoin, contacter la personne qui a créé la ressource.
+- avoir plusieurs manifestations pour les entités? très complexe à mettre en œuvre
+
+est-ce qu'une liste de ressources (ex liste d'exposition) doit être protégée? 
+particulièrement pour le travail des étudiant·e·s
+**Question à soummettre aux responsables d'axes?**
+
+Archives numérisées, principalement en pdf, et si les image sont à publier alors on en fait des images IIIF etc.
+
+workspaces
+- cohérence?
+- ex: superadmin → question des liens
+
+
+
 ## 12 décembre 2022
 
 Reprendre travail dans le cahier des charges (p13)  
